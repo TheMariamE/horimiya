@@ -13,16 +13,16 @@ const MainBanner = () => {
             <div class="main-bg">
                 <img src={mainbg} alt="Horimiya - Main Background"></img>
             </div>
-            <div class="char-cards">
-                <ul class="row">
-                <li class="col-12 col-md-6 col-lg-6">
-                    <div class="cnt-block equal-hight">
+            <div className="char-cards">
+                <ul className="row">
+                <li className="col-12 col-md-6 col-lg-6">
+                    <div className="cnt-block equal-hight kh">
                         <h3>Kyouko Hori</h3>
                         <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
                     </div>
                 </li>
-                <li class="col-12 col-md-6 col-lg-6">
-                    <div class="cnt-block equal-hight">
+                <li className="col-12 col-md-6 col-lg-6">
+                    <div className="cnt-block equal-hight im">
                         <h3>Izumi Miyamura</h3>
                         <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
                     </div>
