@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+/***********Font***************/
+@font-face {
+  font-family: 'Lucida Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/l_10646.ttf'); 
+  src: local('Lucida Sans'), local('LucidaSans'),
+       url('../src/fonts/l_10646.ttf') format('tff'), 
+       url('../src/fonts/LSANS.TTF') format('tff'),
+       url('../src/fonts/LSANSD.TTF') format('tff'),
+       url('../src/fonts/LSANSI.TTF') format('tff'),
+       url('../src/fonts/LTYPE.TTF') format('tff'),
+       url('../src/fonts/LTYPEB.TTF') format('tff'),
+       url('../src/fonts/LTYPEBO.TTF') format('tff'),
+       url('../src/fonts/LTYPEO.TTF') format('tff')
+}
+body {
+  font-family: 'Lucida Sans' !important;
+}
+/***********Menu***************/
+#h-menu {
+  padding: 15px 50px 15px 150px;
+  background-color: #2B2B2B !important;
+}
+#h-menu a.nav-link {
+  color: #fff;
+}
+#h-menu a.nav-link {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-left: 50px;
+}
+a.navbar-brand img {
+  width: 75%;
+}
