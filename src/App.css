@@ -118,7 +118,7 @@ ul{
   list-style:none;
 }
 .char-cards {
-  margin-top: -300px;
+  margin-top: -450px;
   z-index: 9999 !important;
   position: relative;
 }
@@ -151,11 +151,36 @@ ul{
   line-height: 40px;
   font-size: 30px;
 }
-#synopsis{
-  margin-top: 200px;
+
+/*************SYNOPSIS SECTION***************/
+
+#synopsis {
+  margin-top: 350px;
+  margin-bottom: 100px;
 }
 #synopsis h2.s-title {
   font-family: 'Maiandra GD' !important;
   font-size: 50px;
   letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+.blue-bg {
+  background-color: #45D3E7;
+  height: 60vh;
+}
+.grey-bg {
+  background-color: #2B2B2B;
+  padding: 35px;
+  box-shadow: -10px 0px 40px rgb(0 0 0 / 50%);
+}
+.s-img img {
+  width: 100%;
+  box-shadow: 4px 15px 30px rgb(0 0 0 / 50%);
+}
+.s-description p {
+  text-align: justify;
+  color: #fff;
+}
+.row.blue-bg {
+  display: table-row;
 }
