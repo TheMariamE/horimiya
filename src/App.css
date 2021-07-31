@@ -84,7 +84,7 @@ a.navbar-brand img {
 }
 /*************Titles*****************/
 h2.jap-title {
-  font-size: 200px;
+  font-size: 150px;
   text-align: center;
 }
 .main-title {
@@ -111,7 +111,7 @@ h2.jap-title {
   z-index: 20 !important;
   position: relative;
 }
-/*Characters Cards*/
+/******************Characters Cards****************/
 ul{
   margin:0;
   padding:0;
@@ -150,4 +150,12 @@ ul{
   letter-spacing: 2px;
   line-height: 40px;
   font-size: 30px;
+}
+#synopsis{
+  margin-top: 200px;
+}
+#synopsis h2.s-title {
+  font-family: 'Maiandra GD' !important;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
