@@ -1,5 +1,5 @@
 import React from 'react';
-import mainbg from "../mainbg.jpg";
+import synopsis from "./imgs/synopsis.jpg";
 
 const Synopsis = () => {
     return (
@@ -17,7 +17,7 @@ const Synopsis = () => {
                 </div>
                 <div className="col-md-6 s-img">
                     <div>
-                        <img className="" src={mainbg} alt="Horimiya - Main Background"></img>
+                        <img className="" src={synopsis} alt="Horimiya - Main Background"></img>
                     </div>
                 </div>
             </div>

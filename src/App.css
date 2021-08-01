@@ -218,3 +218,25 @@ ul{
       margin-left: -550px;
   }
 }
+
+/***************** GALLERY *********************/
+
+#gallery-1 .g-title{
+  font-family: 'Maiandra GD' !important;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#gallery-1 {
+  text-align: center;
+  background-color: #45D3E7;
+  padding: 100px 0px;
+}
+.row.second-row {
+  margin-top: 20px;
+}
+.g-img-3{
+  height: 377px;
+  width: 277px;
+}

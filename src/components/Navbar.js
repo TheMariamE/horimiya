@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../horimiya.png";
+import logo from "./imgs/horimiya.png";
 
 const Navbar = () => {
     return (

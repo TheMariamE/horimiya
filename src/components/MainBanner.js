@@ -1,5 +1,5 @@
 import React from 'react';
-import mainbg from "../mainbg.jpg";
+import mainbg from "./imgs/mainbg.jpg";
 
 const MainBanner = () => {
     return (
