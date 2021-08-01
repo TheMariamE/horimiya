@@ -7,7 +7,7 @@ const MainBanner = () => {
             <div className="col-sm-12">
                 <h2 className="jap-title">ホリミヤ</h2>
             </div>
-            <div className="col-sm-11 main-title">
+            <div className="col-md-11 main-title">
                 <h1 className="h-title">Horimiya</h1>
             </div>
             <div class="main-bg">

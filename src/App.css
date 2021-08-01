@@ -100,7 +100,7 @@ h2.jap-title {
   letter-spacing: 8px;
   font-family: 'Maiandra GD' !important;
 }
-.col-sm-11.main-title {
+.main-title {
   position: absolute;
   z-index: 999;
   right: 0px;
@@ -170,11 +170,12 @@ ul{
 }
 .grey-bg {
   background-color: #2B2B2B;
-  padding: 35px;
+  padding: 50px;
   box-shadow: -10px 0px 40px rgb(0 0 0 / 50%);
+  margin-left: -125px;
 }
 .s-img img {
-  width: 100%;
+  width: 120%;
   box-shadow: 4px 15px 30px rgb(0 0 0 / 50%);
 }
 .s-description p {
@@ -183,4 +184,37 @@ ul{
 }
 .row.blue-bg {
   display: table-row;
+}
+.s-description, .s-img {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 1600px){
+  .s-img img {
+    width: 100% !important;
+  }
+  .grey-bg {
+    margin-left: 0px !important;
+  }
+}
+@media (max-width: 767px){
+  .s-description, .s-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #synopsis {
+    margin-top: 125px !important;
+  }
+  .cnt-block.kh, .cnt-block.im {
+      margin: 15px auto !important;
+  }
+  .char-cards {
+      margin-top: -750px;
+  }
+  .main-bg img {
+      width: auto;
+      height: 45%;
+      margin-left: -550px;
+  }
 }
