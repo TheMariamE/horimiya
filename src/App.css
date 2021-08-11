@@ -80,7 +80,8 @@ body {
   padding-left: 50px;
 }
 a.navbar-brand img {
-  width: 70%;
+  width: 200px;
+  padding: 10px 0px;
 }
 /*************Titles*****************/
 h2.jap-title {
@@ -123,10 +124,10 @@ ul{
   position: relative;
 }
 .cnt-block.equal-hight {
-  width: 350px;
+  width: 400px;
   background-color: #2B2B2B;
   padding: 45px 100px;
-  height: 200px !important;
+  height: 225px !important;
   box-shadow: 0px 10px 12px rgb(0 0 0 / 65%);
 }
 .cnt-block.kh{
@@ -148,8 +149,8 @@ ul{
 .cnt-block h3 {
   font-family: 'Maiandra GD' !important;
   letter-spacing: 2px;
-  line-height: 40px;
-  font-size: 30px;
+  line-height: 50px;
+  font-size: 40px;
 }
 
 /*************SYNOPSIS SECTION***************/
@@ -239,4 +240,52 @@ ul{
 .g-img-3{
   height: 377px;
   width: 277px;
+}
+/*************** FOOTER***************/
+.dark-bg {
+  background-color: #2B2B2B !important;
+  padding: 75px 150px;
+}
+footer h3 {
+  font-family: 'Maiandra GD' !important;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #FFF;
+}
+.footer-d {
+  color: #fff;
+  text-align: justify;
+  margin-right: 75px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+a.nav-footer {
+  display: block;
+  margin: 15px 0px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+a.nav-footer.first-nav {
+  margin-top: 25px;
+}
+p.footer-sub {
+  color: #fff;
+  font-family: 'Maiandra GD' !important;
+  font-size: 22px;
+}
+a.nav-footer:hover {
+  color: #45D3E7;
+}
+#root .home:after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background-color: #45D3E7;
+  right: 0px;
+  top: 50%;
+  position: revert;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  display: inline-block;
 }

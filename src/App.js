@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import MainBanner from './components/MainBanner';
 import Synopsis from './components/Synopsis';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MainBanner />
       <Synopsis />
       <Gallery />
+      <Footer />
     </>
   );
 }

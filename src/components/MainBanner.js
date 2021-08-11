@@ -10,7 +10,7 @@ const MainBanner = () => {
             <div className="col-md-11 main-title">
                 <h1 className="h-title">Horimiya</h1>
             </div>
-            <div class="main-bg">
+            <div className="main-bg">
                 <img src={mainbg} alt="Horimiya - Main Background"></img>
             </div>
             <div className="char-cards">
