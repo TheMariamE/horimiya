@@ -244,7 +244,13 @@ ul{
 /*************** FOOTER***************/
 .dark-bg {
   background-color: #2B2B2B !important;
-  padding: 75px 150px;
+  padding: 75px 150px 50px 150px;
+}
+.dark-bg-cp {
+  background-color: #2B2B2B !important;
+}
+.blue-bg{
+  background-color: #45D3E7;
 }
 footer h3 {
   font-family: 'Maiandra GD' !important;
@@ -288,4 +294,12 @@ a.nav-footer:hover {
   margin-left: 5px;
   margin-bottom: 3px;
   display: inline-block;
+}
+a.footer-logo img {
+  width: 300px;
+}
+.copyright{
+  color: #2B2B2B;
+  font-size: 18px;
+  padding: 25px;
 }
