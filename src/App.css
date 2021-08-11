@@ -247,9 +247,9 @@ ul{
   padding: 75px 150px 50px 150px;
 }
 .dark-bg-cp {
-  background-color: #2B2B2B !important;
+  background-color: #2B2B2B;
 }
-.blue-bg{
+.blue-bg-cp{
   background-color: #45D3E7;
 }
 footer h3 {
@@ -298,8 +298,10 @@ a.nav-footer:hover {
 a.footer-logo img {
   width: 300px;
 }
-.copyright{
+.copyright {
   color: #2B2B2B;
-  font-size: 18px;
+  font-size: 22px;
   padding: 25px;
+  margin-bottom: 0px;
+  text-align: center;
 }

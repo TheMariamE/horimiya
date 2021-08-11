@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="col-md-6 dark-bg-cp">
                         <p>test</p>
                     </div>
-                    <div className="col-md-6 blue-bg">
+                    <div className="col-md-6 blue-bg-cp">
                         <p className="copyright">Copyright © 2021. No rights reserved. | Web Design by Mariam Edwards.</p>
                     </div>
                 </div>
