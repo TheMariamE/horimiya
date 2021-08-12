@@ -1,5 +1,9 @@
 import React from 'react';
 import logo from "./imgs/horimiya.png";
+import facebook from "./imgs/facebook.png";
+import linkedin from "./imgs/linkedin.png";
+import youtube from "./imgs/youtube.png";
+import twitter from "./imgs/twitter.png";
 
 const Footer = () => {
     return (
@@ -8,6 +12,20 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-3">
                         <a className="footer-logo" href="/"><img src={logo} alt="Horimiya - Logo"></img></a>
+                        <div class="row social-row">
+                            <div class="col-md-3">
+                                <a className="social-logo" href="https://www.facebook.com/Horimiya.animefanpage/" target="_blank"><img src={facebook} alt="Facebook - Logo"></img></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a className="social-logo" href="https://www.linkedin.com/in/mariam-edwards/" target="_blank"><img src={linkedin} alt="Linkedin - Logo"></img></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a className="social-logo" href="https://www.youtube.com/watch?v=8iP8xXXdvoU" target="_blank"><img src={youtube} alt="Youtube - Logo"></img></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a className="social-logo" href="https://twitter.com/horimiya_anime" target="_blank"><img src={twitter} alt="Twitter - Logo"></img></a>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-md-3">
                         <h3>Overview</h3>
