@@ -284,10 +284,11 @@ p.footer-sub {
 .nav-footer:hover {
   color: #45D3E7;
 }
-#app .nav-footer:after,
-#about .nav-footer:after,
-#episodes .nav-footer:after,
-#author .nav-footer:after {
+#app .home:after,
+#about .about:after,
+#episodes .episodes:after,
+#author .author:after,
+#contact .contact:after {
   content: "";
   width: 150px;
   height: 5px;

@@ -4,6 +4,7 @@ import facebook from "./imgs/facebook.png";
 import linkedin from "./imgs/linkedin.png";
 import youtube from "./imgs/youtube.png";
 import twitter from "./imgs/twitter.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -34,10 +35,10 @@ const Footer = () => {
                     <div className="col-md-3">
                         <h3>Navigation</h3>
                         <Link className="nav-footer first-nav home" to="/">Home</Link>
-                        <Link className="nav-footer" to="/about">About Us</Link>
-                        <Link className="nav-footer" to="/episodes">Episodes</Link>
-                        <Link className="nav-footer" to="/author">Author</Link>
-                        <Link className="nav-footer" to="/contact">Contact Us</Link>
+                        <Link className="nav-footer about" to="/about">About Us</Link>
+                        <Link className="nav-footer episodes" to="/episodes">Episodes</Link>
+                        <Link className="nav-footer author" to="/author">Author</Link>
+                        <Link className="nav-footer contact" to="/contact">Contact Us</Link>
                     </div>
                     <div className="col-md-3">
                         <h3>Suscribe</h3>
