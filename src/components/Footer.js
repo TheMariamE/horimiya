@@ -33,11 +33,11 @@ const Footer = () => {
                     </div>
                     <div className="col-md-3">
                         <h3>Navigation</h3>
-                        <a className="nav-footer first-nav home" href="/">Home</a>
-                        <a className="nav-footer" href="#">About Us</a>
-                        <a className="nav-footer" href="#">Episodes</a>
-                        <a className="nav-footer" href="#">Author</a>
-                        <a className="nav-footer" href="#">Contact Us</a>
+                        <Link className="nav-footer first-nav home" to="/">Home</Link>
+                        <Link className="nav-footer" to="/about">About Us</Link>
+                        <Link className="nav-footer" to="/episodes">Episodes</Link>
+                        <Link className="nav-footer" to="/author">Author</Link>
+                        <Link className="nav-footer" to="/contact">Contact Us</Link>
                     </div>
                     <div className="col-md-3">
                         <h3>Suscribe</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from "./imgs/horimiya.png";
 
 const Navbar = () => {
@@ -12,19 +13,19 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <a className="nav-link" href="#">Home</a>
+                    <Link className="nav-link" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">About Us</a>
+                    <Link className="nav-link" to="/about">About Us</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Episodes</a>
+                    <Link className="nav-link" to="/episodes">Episodes</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Author</a>
+                    <Link className="nav-link" to="/author">Author</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Contact Us!</a>
+                    <Link className="nav-link" to="/contact">Contact Us!</Link>
                 </li>
                 </ul>
             </div>

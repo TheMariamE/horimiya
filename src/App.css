@@ -70,10 +70,10 @@ body {
   background-color: #2B2B2B !important;
   box-shadow: 0px 12px 35px rgb(0 0 0 / 15%);
 }
-#h-menu a.nav-link {
+#h-menu .nav-link {
   color: #fff;
 }
-#h-menu a.nav-link {
+#h-menu .nav-link {
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
@@ -265,14 +265,15 @@ footer h3 {
   font-size: 18px;
   margin-top: 25px;
 }
-a.nav-footer {
+.nav-footer {
   display: block;
   margin: 15px 0px;
   color: #fff;
   font-size: 18px;
   text-decoration: none;
+  text-align: left;
 }
-a.nav-footer.first-nav {
+.nav-footer.first-nav {
   margin-top: 25px;
 }
 p.footer-sub {
@@ -280,10 +281,13 @@ p.footer-sub {
   font-family: 'Maiandra GD' !important;
   font-size: 22px;
 }
-a.nav-footer:hover {
+.nav-footer:hover {
   color: #45D3E7;
 }
-#root .home:after {
+#app .nav-footer:after,
+#about .nav-footer:after,
+#episodes .nav-footer:after,
+#author .nav-footer:after {
   content: "";
   width: 150px;
   height: 5px;
