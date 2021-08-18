@@ -248,6 +248,12 @@ ul{
   height: 100vh;
   margin-top: -200px;
 }
+.episodes-bg{
+  background-image: url(./components/imgs/episodesbg.jpg);
+  width: auto;
+  height: 100vh;
+  margin-top: -200px;
+}
 .about-title {
   position: relative;
   top: 65vh;

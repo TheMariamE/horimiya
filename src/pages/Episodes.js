@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
+import EpisodesBanner from '../components/EpisodesBanner';
 
 const Episodes = () => {
     return (
         <div id="episodes">
             <Navbar />
-            <h1>EPISODES</h1>
+            <EpisodesBanner />
             <Footer /> 
         </div>
     )
