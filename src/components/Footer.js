@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-12">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6 dark-bg-cp">
                         <p>test</p>

@@ -145,6 +145,7 @@ ul{
 .cnt-block a {
   text-decoration: none;
   color: #45D3E7;
+  font-size: 18px;
 }
 .cnt-block h3 {
   font-family: 'Maiandra GD' !important;
@@ -173,7 +174,7 @@ ul{
   background-color: #2B2B2B;
   padding: 50px;
   box-shadow: -10px 0px 40px rgb(0 0 0 / 50%);
-  margin-left: -125px;
+  margin-left: -100px;
 }
 .s-img img {
   width: 120%;
@@ -182,6 +183,7 @@ ul{
 .s-description p {
   text-align: justify;
   color: #fff;
+  font-family: 18px;
 }
 .row.blue-bg {
   display: table-row;
