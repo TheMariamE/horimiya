@@ -112,6 +112,7 @@ h2.jap-title {
   z-index: 20 !important;
   position: relative;
 }
+
 /******************Characters Cards****************/
 ul{
   margin:0;
@@ -220,6 +221,11 @@ ul{
       height: 45%;
       margin-left: -550px;
   }
+}
+.about-bg{
+  background-image: url(./components/imgs/mainbg.jpg);
+  width: auto;
+  height: 600vh;
 }
 
 /***************** GALLERY *********************/

@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Home.js';
-import About from './About.js';
-import Episodes from './Episodes.js';
-import Author from './Author.js';
-import Contact from './Contact.js';
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import Episodes from './pages/Episodes.js';
+import Author from './pages/Author.js';
+import Contact from './pages/Contact.js';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
