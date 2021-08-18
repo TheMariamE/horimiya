@@ -254,6 +254,18 @@ ul{
   height: 100vh;
   margin-top: -200px;
 }
+.author-bg{
+  background-image: url(./components/imgs/authorbg.jpg);
+  width: auto;
+  height: 100vh;
+  margin-top: -200px;
+}
+.contact-bg{
+  background-image: url(./components/imgs/contactbg.jpg);
+  width: auto;
+  height: 100vh;
+  margin-top: -200px;
+}
 .about-title {
   position: relative;
   top: 65vh;

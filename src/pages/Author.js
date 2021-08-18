@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
+import AuthorBanner from '../components/AuthorBanner';
 
 const Author = () => {
     return (
         <div id="author">
             <Navbar />
-            <h1>AUTHOR</h1>
+            <AuthorBanner />
             <Footer /> 
         </div>
     )
