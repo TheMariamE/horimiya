@@ -76,18 +76,18 @@ body {
 #h-menu .nav-link {
   color: #fff;
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   padding-left: 50px;
 }
 a.navbar-brand img {
   width: 200px;
   padding: 10px 0px;
 }
-#app .home a.nav-link:after,
-#about .about a.nav-link:after,
-#episodes .episodes a.nav-link:after,
-#author .author a.nav-link:after,
-#contact .contact a.nav-link:after{
+#app .home-m a.nav-link:after,
+#about .about-m a.nav-link:after,
+#episodes .episodes-m a.nav-link:after,
+#author .author-m a.nav-link:after,
+#contact .contact-m a.nav-link:after{
   content: "";
   width: 35px;
   height: 5px;
@@ -95,11 +95,11 @@ a.navbar-brand img {
   position: relative;
   display: block;
 }
-#app .home a.nav-link,
-#about .about a.nav-link,
-#episodes .episodes a.nav-link,
-#author .author a.nav-link,
-#contact .contact a.nav-link{
+#app .home-m a.nav-link,
+#about .about-m a.nav-link,
+#episodes .episodes-m a.nav-link,
+#author .author-m a.nav-link,
+#contact .contact-m a.nav-link{
   color: #45D3E7 !important;
 }
 
@@ -338,7 +338,7 @@ a.footer-logo img {
 }
 .copyright {
   color: #2B2B2B;
-  font-size: 22px;
+  font-size: 20px;
   padding: 25px;
   margin-bottom: 0px;
   text-align: center;
