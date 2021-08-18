@@ -83,6 +83,26 @@ a.navbar-brand img {
   width: 200px;
   padding: 10px 0px;
 }
+#app .home a.nav-link:after,
+#about .about a.nav-link:after,
+#episodes .episodes a.nav-link:after,
+#author .author a.nav-link:after,
+#contact .contact a.nav-link:after{
+  content: "";
+  width: 35px;
+  height: 5px;
+  background-color: #45D3E7;
+  position: relative;
+  display: block;
+}
+#app .home a.nav-link,
+#about .about a.nav-link,
+#episodes .episodes a.nav-link,
+#author .author a.nav-link,
+#contact .contact a.nav-link{
+  color: #45D3E7 !important;
+}
+
 /*************Titles*****************/
 h2.jap-title {
   font-size: 150px;
@@ -184,7 +204,7 @@ ul{
 .s-description p {
   text-align: justify;
   color: #fff;
-  font-family: 18px;
+  font-size: 18px;
 }
 .row.blue-bg {
   display: table-row;
@@ -223,9 +243,14 @@ ul{
   }
 }
 .about-bg{
-  background-image: url(./components/imgs/mainbg.jpg);
+  background-image: url(./components/imgs/aboutbg.jpg);
   width: auto;
-  height: 600vh;
+  height: 100vh;
+  margin-top: -200px;
+}
+.about-title {
+  position: relative;
+  top: 65vh;
 }
 
 /***************** GALLERY *********************/
