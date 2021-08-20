@@ -6,7 +6,7 @@ const AboutBanner = () => {
         <div>
             <div className="about-bg">
                 {/* <img src={mainbg} alt="Horimiya - About Us Background"></img> */}
-                <div className="col-md-11 main-title about-title">
+                <div className="col-md-11 main-title aboutus-title">
                     <h1 className="h-title">Hori-san and Miyamura-kun</h1>
                 </div>
             </div>

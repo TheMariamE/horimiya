@@ -3,12 +3,76 @@ import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import AboutBanner from '../components/AboutBanner';
 import synopsis from "../components/imgs/about-horimiya.jpg";
+import kyouko from "../components/imgs/kyouko.png";
+import izumi from "../components/imgs/izumi.png";
+import yuki from "../components/imgs/yuki.png";
+import tooru from "../components/imgs/tooru.png";
+import kakeru from "../components/imgs/kakeru.png";
+import remi from "../components/imgs/remi.png";
+import sakura from "../components/imgs/sakura.png";
 
 const About = () => {
     return (
         <div id="about">
             <Navbar />
             <AboutBanner />
+            <div id="about-us" class="container-fluid">
+                <ul class="row characters-1">
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={kyouko} alt="Horimiya - Kyouko Hori"></img>
+                            <h3>Kyouko Hori</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={izumi} alt="Horimiya - Izumi Miyamura"></img>
+                            <h3>Izumi Miyamura</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={yuki} alt="Horimiya - Yuki Yoshikawa"></img>
+                            <h3>Yuki Yoshikawa</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
+                            <h3>Tooru Ishikawa</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row characters-2">
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
+                            <h3>Kakeru Sengoku</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <div class="cnt-block equal-hight">
+                            <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
+                            <h3>Remi Ayasaki</h3>
+                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE">
+                            <div class="cnt-block equal-hight">
+                                <img className="" src={sakura} alt="Horimiya - Sakura Kouno"></img>
+                                <h3>Sakura Kouno</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div id="synopsis-au" className="container-lg synopsis">
                 <div className="row">
                     <div className="col-sm-12">

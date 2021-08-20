@@ -270,6 +270,10 @@ ul{
   position: relative;
   top: 65vh;
 }
+.aboutus-title {
+  position: relative;
+  top: 60vh;
+}
 .contact-title {
   position: relative;
   top: 55vh;
@@ -377,6 +381,38 @@ a.social-logo:hover img {
   transform: scale(1.1);
 }
 /************************ ABOUT US ****************************/
+
+/************** ABOUT CHARACTERS ***************/
+#about-us {
+  background-color: #45d3e7;
+  height: 65vh;
+  margin-top: -25px;
+}
+.characters-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px !important;
+}
+#about-us .cnt-block.equal-hight {
+  width: 400px;
+  background-color: #2B2B2B;
+  padding: 75px 100px 75px 100px;
+  height: 325px !important;
+  box-shadow: 0px 10px 12px rgb(0 0 0 / 65%);
+}
+#about-us img {
+  height: 200px;
+  margin-top: -150px;
+  border-radius: 50%;
+}
+#about-us .cnt-block h3 {
+  margin-top: 20px;
+}
+.characters-1 .cnt-block {
+  margin-top: -150px;
+}
+
+/************** ABOUT HORIMIYA ***************/
 #synopsis-au {
   margin-top: 100px;
   margin-bottom: 150px;
@@ -406,7 +442,7 @@ a.social-logo:hover img {
   background-color: #45D3E7;
   padding: 50px 50px !important;
   box-shadow: 4px 15px 30px rgb(0 0 0 / 50%);
-  margin-left: 40px;
+  margin-left: 35px;
 }
 .sau-description p {
   text-align: justify;
