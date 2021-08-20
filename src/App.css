@@ -411,6 +411,34 @@ a.social-logo:hover img {
 .characters-1 .cnt-block {
   margin-top: -150px;
 }
+/*Hover Characters*/
+a:hover .cnt-block.equal-hight.k-h {
+  background-color: #775030 !important;
+}
+a:hover .cnt-block.equal-hight.i-m {
+  background-color: #485063 !important;
+}
+a:hover .cnt-block.equal-hight.yy {
+  background-color: #c5b270 !important;
+}
+a:hover .cnt-block.equal-hight.ti {
+  background-color: #835f83 !important;
+}
+a:hover .cnt-block.equal-hight.ks {
+  background-color: #872e30 !important;
+}
+a:hover .cnt-block.equal-hight.ra {
+  background-color: #eb6c73 !important;
+}
+a:hover .cnt-block.equal-hight.sk {
+  background-color: #4c6421 !important;
+}
+a:hover .cnt-block.equal-hight.sk a {
+  color: #fff;
+}
+a.horimiya-characters {
+  text-decoration: none;
+}
 
 /************** ABOUT HORIMIYA ***************/
 #synopsis-au {

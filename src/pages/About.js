@@ -16,55 +16,67 @@ const About = () => {
         <div id="about">
             <Navbar />
             <AboutBanner />
-            <div id="about-us" class="container-fluid">
-                <ul class="row characters-1">
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={kyouko} alt="Horimiya - Kyouko Hori"></img>
-                            <h3>Kyouko Hori</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+            <div id="about-us" className="container-fluid">
+                <ul className="row characters-1">
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight k-h">
+                                <img className="" src={kyouko} alt="Horimiya - Kyouko Hori"></img>
+                                <h3>Kyouko Hori</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={izumi} alt="Horimiya - Izumi Miyamura"></img>
-                            <h3>Izumi Miyamura</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight i-m">
+                                <img className="" src={izumi} alt="Horimiya - Izumi Miyamura"></img>
+                                <h3>Izumi Miyamura</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={yuki} alt="Horimiya - Yuki Yoshikawa"></img>
-                            <h3>Yuki Yoshikawa</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight yy">
+                                <img className="" src={yuki} alt="Horimiya - Yuki Yoshikawa"></img>
+                                <h3>Yuki Yoshikawa</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
-                            <h3>Tooru Ishikawa</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight ti">
+                                <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
+                                <h3>Tooru Ishikawa</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-                <ul class="row characters-2">
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
-                            <h3>Kakeru Sengoku</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+                <ul className="row characters-2">
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight ks">
+                                <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
+                                <h3>Kakeru Sengoku</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
                     <li class="col-12 col-md-6 col-lg-3">
-                        <div class="cnt-block equal-hight">
-                            <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
-                            <h3>Remi Ayasaki</h3>
-                            <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
-                        </div>
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight ra">
+                                <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
+                                <h3>Remi Ayasaki</h3>
+                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE">
-                            <div class="cnt-block equal-hight">
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight sk">
                                 <img className="" src={sakura} alt="Horimiya - Sakura Kouno"></img>
                                 <h3>Sakura Kouno</h3>
                                 <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
@@ -86,7 +98,7 @@ const About = () => {
                     </div>
                     <div className="col-md-5 sau-img">
                         <div>
-                            <img className="" src={synopsis} alt="About Horimiya"></img>
+                            <img src={synopsis} alt="About Horimiya"></img>
                         </div>
                     </div>
                 </div>
