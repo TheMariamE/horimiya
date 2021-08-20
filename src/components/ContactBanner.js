@@ -4,7 +4,7 @@ const ContactBanner = () => {
     return (
         <div>
             <div className="contact-bg">
-                <div className="col-md-11 main-title about-title">
+                <div className="col-md-11 main-title contact-title">
                     <h1 className="h-title">Contact Us!</h1>
                 </div>
             </div>
