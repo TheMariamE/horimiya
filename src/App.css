@@ -41,7 +41,7 @@
   font-family: 'Lucida Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/fonts/l_10646.ttf'); 
+  src: url('../src/fonts/LSANS.TTF'); 
   src: local('Lucida Sans'), local('LucidaSans'),
        url('../src/fonts/l_10646.ttf') format('tff'), 
        url('../src/fonts/LSANS.TTF') format('tff'),
@@ -375,4 +375,40 @@ a.social-logo img {
 }
 a.social-logo:hover img {
   transform: scale(1.1);
+}
+/************************ ABOUT US ****************************/
+#synopsis-au {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+#synopsis-au h2.sau-title {
+  font-family: 'Maiandra GD' !important;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.sau-img img {
+  width: 110%;
+  box-shadow: 4px 15px 30px rgb(0 0 0 / 50%);
+}
+.sau-img {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dark-bg-au {
+  background-color: #2b2b2b;
+  height: 45vh;
+  align-content: center;
+  margin-top: 50px !important;
+}
+.blue-bg-au {
+  background-color: #45D3E7;
+  padding: 50px 50px !important;
+  box-shadow: 4px 15px 30px rgb(0 0 0 / 50%);
+  margin-left: 40px;
+}
+.sau-description p {
+  text-align: justify;
+  font-size: 18px;
 }
