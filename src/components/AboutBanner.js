@@ -1,5 +1,4 @@
 import React from 'react';
-import mainbg from "./imgs/aboutbg.jpg";
 
 const AboutBanner = () => {
     return (

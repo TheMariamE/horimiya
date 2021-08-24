@@ -433,11 +433,35 @@ a:hover .cnt-block.equal-hight.ra {
 a:hover .cnt-block.equal-hight.sk {
   background-color: #4c6421 !important;
 }
-a:hover .cnt-block.equal-hight.sk a {
+a:hover .cnt-block.equal-hight a {
   color: #fff;
 }
 a.horimiya-characters {
   text-decoration: none;
+}
+
+/**Modal**/
+.mymodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /************** ABOUT HORIMIYA ***************/

@@ -5,7 +5,7 @@ import About from './pages/About.js';
 import Episodes from './pages/Episodes.js';
 import Author from './pages/Author.js';
 import Contact from './pages/Contact.js';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 function App() {

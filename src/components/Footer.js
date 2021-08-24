@@ -13,18 +13,18 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-3">
                         <a className="footer-logo" href="/"><img src={logo} alt="Horimiya - Logo"></img></a>
-                        <div class="row social-row">
-                            <div class="col-md-3">
-                                <a className="social-logo" href="https://www.facebook.com/Horimiya.animefanpage/" target="_blank"><img src={facebook} alt="Facebook - Logo"></img></a>
+                        <div className="row social-row">
+                            <div className="col-md-3">
+                                <a className="social-logo" href="https://www.facebook.com/Horimiya.animefanpage/" target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook - Logo"></img></a>
                             </div>
-                            <div class="col-md-3">
-                                <a className="social-logo" href="https://www.linkedin.com/in/mariam-edwards/" target="_blank"><img src={linkedin} alt="Linkedin - Logo"></img></a>
+                            <div className="col-md-3">
+                                <a className="social-logo" href="https://www.linkedin.com/in/mariam-edwards/" target="_blank" rel="noreferrer"><img src={linkedin} alt="Linkedin - Logo"></img></a>
                             </div>
-                            <div class="col-md-3">
-                                <a className="social-logo" href="https://www.youtube.com/watch?v=8iP8xXXdvoU" target="_blank"><img src={youtube} alt="Youtube - Logo"></img></a>
+                            <div className="col-md-3">
+                                <a className="social-logo" href="https://www.youtube.com/watch?v=8iP8xXXdvoU" target="_blank" rel="noreferrer"><img src={youtube} alt="Youtube - Logo"></img></a>
                             </div>
-                            <div class="col-md-3">
-                                <a className="social-logo" href="https://twitter.com/horimiya_anime" target="_blank"><img src={twitter} alt="Twitter - Logo"></img></a>
+                            <div className="col-md-3">
+                                <a className="social-logo" href="https://twitter.com/horimiya_anime" target="_blank" rel="noreferrer"><img src={twitter} alt="Twitter - Logo"></img></a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6 dark-bg-cp">
-                        <p>test</p>
+                        <p></p>
                     </div>
                     <div className="col-md-6 blue-bg-cp">
                         <p className="copyright">Copyright © 2021. No rights reserved. | Web Design by Mariam Edwards.</p>

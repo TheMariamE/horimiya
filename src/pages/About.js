@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from "react-modal";
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import AboutBanner from '../components/AboutBanner';
@@ -11,7 +12,14 @@ import kakeru from "../components/imgs/kakeru.png";
 import remi from "../components/imgs/remi.png";
 import sakura from "../components/imgs/sakura.png";
 
+Modal.setAppElement("#root");
+
 const About = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleModal() {
+      setIsOpen(!isOpen);
+    }
     return (
         <div id="about">
             <Navbar />
@@ -19,14 +27,18 @@ const About = () => {
             <div id="about-us" className="container-fluid">
                 <ul className="row characters-1">
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={toggleModal} className="horimiya-characters" href="javascript:void(0)">
                             <div className="cnt-block equal-hight k-h">
                                 <img className="" src={kyouko} alt="Horimiya - Kyouko Hori"></img>
                                 <h3>Kyouko Hori</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p><a href="javascript:void(0)">Learn More!</a></p>
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Kyouko Hori" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div>Kyouko Hori</div>
+                        <button onClick={toggleModal}>Go Back!</button>
+                     </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
                         <a href="https://github.com/TheMariamE" className="horimiya-characters">
                             <div className="cnt-block equal-hight i-m">
@@ -104,6 +116,23 @@ const About = () => {
                 </div>
             </div>
             <Footer /> 
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }

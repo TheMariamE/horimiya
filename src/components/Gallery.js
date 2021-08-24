@@ -1,5 +1,4 @@
 import React from 'react';
-import mainbg from "./imgs/mainbg.jpg";
 import img1 from "./imgs/Image2.jpg";
 import img3 from "./imgs/Image3.jpg";
 import img4 from "./imgs/Image4.jpg";
