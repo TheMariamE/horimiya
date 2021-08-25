@@ -7,6 +7,7 @@ import synopsis from "../components/imgs/about-horimiya.jpg";
 import kyouko from "../components/imgs/kyouko.png";
 import hori from "../components/imgs/KyoukoHori.jpg";
 import izumi from "../components/imgs/izumi.png";
+import miyamura from "../components/imgs/IzumiMiyamura.jpg";
 import yuki from "../components/imgs/yuki.png";
 import tooru from "../components/imgs/tooru.png";
 import kakeru from "../components/imgs/kakeru.png";
@@ -17,9 +18,13 @@ Modal.setAppElement("#root");
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
 
     function toggleModal() {
       setIsOpen(!isOpen);
+    }
+    function izumiMiyamura() {
+        setIsOpen2(!isOpen2);
     }
     return (
         <div id="about">
@@ -28,11 +33,11 @@ const About = () => {
             <div id="about-us" className="container-fluid">
                 <ul className="row characters-1">
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a onClick={toggleModal} className="horimiya-characters" href="javascript:void(0)">
+                        <a onClick={toggleModal} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight k-h">
                                 <img className="" src={kyouko} alt="Horimiya - Kyouko Hori"></img>
                                 <h3>Kyouko Hori</h3>
-                                <p><a href="javascript:void(0)">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
@@ -53,20 +58,36 @@ const About = () => {
                         </div>
                      </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={izumiMiyamura} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight i-m">
                                 <img className="" src={izumi} alt="Horimiya - Izumi Miyamura"></img>
                                 <h3>Izumi Miyamura</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen2} onRequestClose={izumiMiyamura} contentLabel="Izumi Miyamura" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div class="row">
+                            <div class="col-md-7 p-container-modal">
+                                <h2>Izumi Miyamura</h2>
+                                <hr></hr>
+                                <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
+                                <p>Initially at school, Izumi gives off the impression of a quiet, gloomy and anti-social person. His classmates' perception of him is that he is an otaku with good studying capabilities, but a hard person to approach and maintain a conversation with.</p>
+                                <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
+                                <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
+                            </div>
+                            <div class="col-md-5 img-container-modal">
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
+                            </div>
+                            <button onClick={izumiMiyamura}>Go Back!</button>
+                        </div>
+                     </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
                         <a href="https://github.com/TheMariamE" className="horimiya-characters">
                             <div className="cnt-block equal-hight yy">
                                 <img className="" src={yuki} alt="Horimiya - Yuki Yoshikawa"></img>
                                 <h3>Yuki Yoshikawa</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
@@ -75,7 +96,7 @@ const About = () => {
                             <div className="cnt-block equal-hight ti">
                                 <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
                                 <h3>Tooru Ishikawa</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
@@ -86,7 +107,7 @@ const About = () => {
                             <div className="cnt-block equal-hight ks">
                                 <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
                                 <h3>Kakeru Sengoku</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
@@ -95,7 +116,7 @@ const About = () => {
                             <div className="cnt-block equal-hight ra">
                                 <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
                                 <h3>Remi Ayasaki</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
@@ -104,7 +125,7 @@ const About = () => {
                             <div className="cnt-block equal-hight sk">
                                 <img className="" src={sakura} alt="Horimiya - Sakura Kouno"></img>
                                 <h3>Sakura Kouno</h3>
-                                <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                                <p>Learn More!</p>
                             </div>
                         </a>
                     </li>
