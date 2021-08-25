@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import AboutBanner from '../components/AboutBanner';
 import synopsis from "../components/imgs/about-horimiya.jpg";
 import kyouko from "../components/imgs/kyouko.png";
+import hori from "../components/imgs/KyoukoHori.jpg";
 import izumi from "../components/imgs/izumi.png";
 import yuki from "../components/imgs/yuki.png";
 import tooru from "../components/imgs/tooru.png";
@@ -36,8 +37,20 @@ const About = () => {
                         </a>
                     </li>
                     <Modal href="" isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Kyouko Hori" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
-                        <div>Kyouko Hori</div>
-                        <button onClick={toggleModal}>Go Back!</button>
+                        <div class="row">
+                            <div class="col-md-7 p-container-modal">
+                                <h2>Kyouko Hori</h2>
+                                <hr></hr>
+                                <p>Kyouko Hori (堀 京子 Hori Kyōko?) is protagonists of <b>Horimiya</b>. She is a student in Class 3-1 of Katagiri Senior High School.</p>
+                                <p>Kyouko is normally a very energetic and popular person who always creates a happy atmosphere around herself. She is a hard-worker in all aspects of her life, and, according to Izumi Miyamura, she scores above 90% for all her tests. When nervous or embarrassed, she tends to switch to a violent state. This is seen when Kyousuke Hori asks if Miyamura was her boyfriend, resulting in her turning red and shoving a hot ladle into his face.</p>
+                                <p>Hori is somewhat of a sadist masochist- however this is only when it comes to Miyamura. Whenever he suddenly flips his personality to that of an abusive boyfriend for a short while (at her request), Hori enjoys the treatment and feels refreshed afterward. This is probably due to the fact that Miyamura is always calm and non-abusive.</p>
+                                <p>She is also shown to be very jealous at times girls are flirting with Miyamura to the point where Yuki Yoshikawa and Tooru Ishikawa call her "Ice Queen". In some parts of the manga, she is also referred to as "Hannya" or the "Goddess of Jealousy". Over the course of the story, she does not seem to be too bothered with girls talking to Miyamura anymore but instead, worries that he might love a man. She once told him that it's okay to love another woman but not a man.</p>
+                            </div>
+                            <div class="col-md-5 img-container-modal">
+                                <img className="modal-img" src={hori} alt="Horimiya - Kyouko Hori"></img>
+                            </div>
+                            <button onClick={toggleModal}>Go Back!</button>
+                        </div>
                      </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
                         <a href="https://github.com/TheMariamE" className="horimiya-characters">

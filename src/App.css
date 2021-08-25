@@ -94,6 +94,7 @@ a.navbar-brand img {
   background-color: #45D3E7;
   position: relative;
   display: block;
+  border-radius: 5px;
 }
 #app .home-m a.nav-link,
 #about .about-m a.nav-link,
@@ -448,15 +449,15 @@ a.horimiya-characters {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  border: 1px solid #ccc;
   background: #fff;
   overflow: auto;
-  border-radius: 4px;
+  border-radius: 10px;
   outline: none;
   padding: 50px;
 
   width: 75%;
-  height: 80vh;
+  height: 90vh;
+  background-color: #2B2B2B;
 }
 
 .myoverlay {
@@ -471,6 +472,49 @@ a.horimiya-characters {
 .mymodal h2 {
   font-family: 'Maiandra GD' !important;
   font-size: 45px;
+}
+.mymodal p {
+  text-align: justify;
+  font-size: 16px;
+}
+.mymodal h2, .mymodal p {
+  color: #fff;
+}
+.mymodal hr {
+  color: #45D3E7;
+  border-radius: 5px;
+  height: 5px;
+  width: 50%;
+  margin-top: 0px;
+  opacity: 1;
+}
+.img-container-modal {
+  display: grid;
+  background-color: #45D3E7;
+}
+img.modal-img {
+  border-radius: 50% !important;
+  width: 90% !important;
+  margin: auto;
+  align-self: center;
+  border: 25px solid #2b2b2b;
+}
+.mymodal button {
+  background-color: #45D3E7;
+  padding: 15px;
+  color: #2b2b2b;
+  font-family: 'Maiandra GD' !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border: none;
+  margin-top: 15px;
+}
+.mymodal button:hover {
+  background-color: #fff;
+}
+.p-container-modal{
+  padding: 50px;
 }
 
 /************** ABOUT HORIMIYA ***************/
