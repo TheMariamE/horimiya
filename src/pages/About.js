@@ -19,12 +19,20 @@ Modal.setAppElement("#root");
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
 
     function toggleModal() {
       setIsOpen(!isOpen);
     }
     function izumiMiyamura() {
         setIsOpen2(!isOpen2);
+    }
+    function tooruIshikawa() {
+      setIsOpen3(!isOpen3);
+    }
+    function yukiYoshikawa() {
+        setIsOpen4(!isOpen4);
     }
     return (
         <div id="about">
@@ -42,8 +50,8 @@ const About = () => {
                         </a>
                     </li>
                     <Modal href="" isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Kyouko Hori" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
-                        <div class="row">
-                            <div class="col-md-7 p-container-modal">
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
                                 <h2>Kyouko Hori</h2>
                                 <hr></hr>
                                 <p>Kyouko Hori (堀 京子 Hori Kyōko?) is protagonists of <b>Horimiya</b>. She is a student in Class 3-1 of Katagiri Senior High School.</p>
@@ -51,7 +59,7 @@ const About = () => {
                                 <p>Hori is somewhat of a sadist masochist- however this is only when it comes to Miyamura. Whenever he suddenly flips his personality to that of an abusive boyfriend for a short while (at her request), Hori enjoys the treatment and feels refreshed afterward. This is probably due to the fact that Miyamura is always calm and non-abusive.</p>
                                 <p>She is also shown to be very jealous at times girls are flirting with Miyamura to the point where Yuki Yoshikawa and Tooru Ishikawa call her "Ice Queen". In some parts of the manga, she is also referred to as "Hannya" or the "Goddess of Jealousy". Over the course of the story, she does not seem to be too bothered with girls talking to Miyamura anymore but instead, worries that he might love a man. She once told him that it's okay to love another woman but not a man.</p>
                             </div>
-                            <div class="col-md-5 img-container-modal">
+                            <div className="col-md-5 img-container-modal">
                                 <img className="modal-img" src={hori} alt="Horimiya - Kyouko Hori"></img>
                             </div>
                             <button onClick={toggleModal}>Go Back!</button>
@@ -67,8 +75,8 @@ const About = () => {
                         </a>
                     </li>
                     <Modal href="" isOpen={isOpen2} onRequestClose={izumiMiyamura} contentLabel="Izumi Miyamura" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
-                        <div class="row">
-                            <div class="col-md-7 p-container-modal">
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
                                 <h2>Izumi Miyamura</h2>
                                 <hr></hr>
                                 <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
@@ -76,14 +84,14 @@ const About = () => {
                                 <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
                                 <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
                             </div>
-                            <div class="col-md-5 img-container-modal">
+                            <div className="col-md-5 img-container-modal">
                                 <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
                             </div>
                             <button onClick={izumiMiyamura}>Go Back!</button>
                         </div>
                      </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={yukiYoshikawa} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight yy">
                                 <img className="" src={yuki} alt="Horimiya - Yuki Yoshikawa"></img>
                                 <h3>Yuki Yoshikawa</h3>
@@ -91,8 +99,24 @@ const About = () => {
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen4} onRequestClose={yukiYoshikawa} contentLabel="Yuki Yoshikawa" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
+                                <h2>Yuki Yoshikawa</h2>
+                                <hr></hr>
+                                <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
+                                <p>Initially at school, Izumi gives off the impression of a quiet, gloomy and anti-social person. His classmates' perception of him is that he is an otaku with good studying capabilities, but a hard person to approach and maintain a conversation with.</p>
+                                <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
+                                <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
+                            </div>
+                            <div className="col-md-5 img-container-modal">
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
+                            </div>
+                            <button onClick={yukiYoshikawa}>Go Back!</button>
+                        </div>
+                     </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={tooruIshikawa} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight ti">
                                 <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
                                 <h3>Tooru Ishikawa</h3>
@@ -100,6 +124,22 @@ const About = () => {
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen3} onRequestClose={tooruIshikawa} contentLabel="Tooru Ishikawa" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
+                                <h2>Tooru Ishikawa</h2>
+                                <hr></hr>
+                                <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
+                                <p>Initially at school, Izumi gives off the impression of a quiet, gloomy and anti-social person. His classmates' perception of him is that he is an otaku with good studying capabilities, but a hard person to approach and maintain a conversation with.</p>
+                                <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
+                                <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
+                            </div>
+                            <div className="col-md-5 img-container-modal">
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
+                            </div>
+                            <button onClick={tooruIshikawa}>Go Back!</button>
+                        </div>
+                     </Modal>
                 </ul>
                 <ul className="row characters-2">
                     <li className="col-12 col-md-6 col-lg-3">
@@ -111,7 +151,7 @@ const About = () => {
                             </div>
                         </a>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-3">
+                    <li className="col-12 col-md-6 col-lg-3">
                         <a href="https://github.com/TheMariamE" className="horimiya-characters">
                             <div className="cnt-block equal-hight ra">
                                 <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
@@ -150,18 +190,18 @@ const About = () => {
                 </div>
             </div>
             <Footer /> 
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
+            <div id="myModal" className="modal fade" role="dialog">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            <h4 className="modal-title">Modal Header</h4>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <p>Some text in the modal.</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
