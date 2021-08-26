@@ -481,6 +481,7 @@ a.horimiya-characters {
 .mymodal p {
   text-align: justify;
   font-size: 18px;
+  line-height: 30px;
 }
 .mymodal h2, .mymodal p {
   color: #fff;
@@ -520,6 +521,13 @@ img.modal-img {
 }
 .p-container-modal{
   padding: 50px !important;
+}
+.mymodal {
+  display: grid;
+}
+.mymodal .row{
+  margin: auto;
+  align-self: center;
 }
 
 /************** ABOUT HORIMIYA ***************/
