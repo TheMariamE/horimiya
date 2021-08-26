@@ -13,8 +13,11 @@ import yoshikawa from "../components/imgs/YukiYoshikawa.jpg";
 import tooru from "../components/imgs/tooru.png";
 import ishikawa from "../components/imgs/TooruIshikawa.jpg";
 import kakeru from "../components/imgs/kakeru.png";
+import sengoku from "../components/imgs/KakeruSengoku.jpg";
 import remi from "../components/imgs/remi.png";
+import ayasaki from "../components/imgs/RemiAyasaki.jpg";
 import sakura from "../components/imgs/sakura.png";
+import kouno from "../components/imgs/SakuraKouno.jpg";
 
 
 Modal.setAppElement("#root");
@@ -177,7 +180,7 @@ const About = () => {
                                 <p>Sengoku is very insecure when it comes to his body. Thinking his slender body is embarrassing and always refusing to show it in various occasions, even going as far as to make up extravagant lies to get out of it. He wears multiple layers of clothing to hide his body type.</p>
                             </div>
                             <div className="col-md-5 img-container-modal">
-                                <img className="modal-img" src={miyamura} alt="Horimiya - Kakeru Sengoku"></img>
+                                <img className="modal-img" src={sengoku} alt="Horimiya - Kakeru Sengoku"></img>
                             </div>
                             <button onClick={kakeruSengoku}>Go Back!</button>
                         </div>
@@ -201,7 +204,7 @@ const About = () => {
                                 <p>Remi is considered as a beautiful and very cute young girl with waist-length hot pink hair that is tied in twintails (where it straight to her down to her shoulders) with bangs hanging over her forehead while she has chin-length hair strands hanging on either side and dark-pink eyes.</p>
                             </div>
                             <div className="col-md-5 img-container-modal">
-                                <img className="modal-img" src={miyamura} alt="Horimiya - Remi Ayasaki"></img>
+                                <img className="modal-img" src={ayasaki} alt="Horimiya - Remi Ayasaki"></img>
                             </div>
                             <button onClick={remiAyasaki}>Go Back!</button>
                         </div>
@@ -226,7 +229,7 @@ const About = () => {
                                 <p>In book nine, she states that she is Buddhist.</p>
                             </div>
                             <div className="col-md-5 img-container-modal">
-                                <img className="modal-img" src={miyamura} alt="Horimiya - Sakura Kouno"></img>
+                                <img className="modal-img" src={kouno} alt="Horimiya - Sakura Kouno"></img>
                             </div>
                             <button onClick={sakuraKouno}>Go Back!</button>
                         </div>
