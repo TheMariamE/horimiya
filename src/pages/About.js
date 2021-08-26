@@ -9,10 +9,13 @@ import hori from "../components/imgs/KyoukoHori.jpg";
 import izumi from "../components/imgs/izumi.png";
 import miyamura from "../components/imgs/IzumiMiyamura.jpg";
 import yuki from "../components/imgs/yuki.png";
+import yoshikawa from "../components/imgs/yukiYoshikawa.jpg";
 import tooru from "../components/imgs/tooru.png";
+import ishikawa from "../components/imgs/TooruIshikawa.jpg";
 import kakeru from "../components/imgs/kakeru.png";
 import remi from "../components/imgs/remi.png";
 import sakura from "../components/imgs/sakura.png";
+
 
 Modal.setAppElement("#root");
 
@@ -104,13 +107,13 @@ const About = () => {
                             <div className="col-md-7 p-container-modal">
                                 <h2>Yuki Yoshikawa</h2>
                                 <hr></hr>
-                                <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
-                                <p>Initially at school, Izumi gives off the impression of a quiet, gloomy and anti-social person. His classmates' perception of him is that he is an otaku with good studying capabilities, but a hard person to approach and maintain a conversation with.</p>
-                                <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
-                                <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
+                                <p>Yuki Yoshikawa (吉川 由紀 Yoshikawa Yuki?) is a close friend of Kyouko Hori's who attends Katagiri Senior High School, the same school Hori goes to.</p>
+                                <p>Yuki has a typical bubbly and ditzy personality who often creates a fun and happy atmosphere for those close to her, though she can be quite lazy which is evident by her tendency to sleep during class. She is easy to get along with and makes friends relatively quickly, as seen with Izumi Miyamura.</p>
+                                <p>However, Yuki often tries to hide her negative feelings—especially in front of friends—by pretending that she is alright and doesn't care about the situation. It is noted by Kyouko that when Yuki doesn't want someone to know something, she tries to hide it by covering it with a smile and that the more she doesn't want to let go of something, the less she talks about it.</p>
+                                <p>As she is reserved when it comes to her own feelings, she never tells anyone how she really feels or what she really wants. Due to this, the things she loves often are out of her reach.</p>
                             </div>
                             <div className="col-md-5 img-container-modal">
-                                <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
+                                <img className="modal-img" src={yoshikawa} alt="Horimiya - Yuki Yoshikawa"></img>
                             </div>
                             <button onClick={yukiYoshikawa}>Go Back!</button>
                         </div>
@@ -120,6 +123,33 @@ const About = () => {
                             <div className="cnt-block equal-hight ti">
                                 <img className="" src={tooru} alt="Horimiya - Tooru Ishikawa"></img>
                                 <h3>Tooru Ishikawa</h3>
+                                <p>Learn More!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <Modal href="" isOpen={isOpen3} onRequestClose={tooruIshikawa} contentLabel="Tooru Ishikawa" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
+                                <h2>Tooru Ishikawa</h2>
+                                <hr></hr>
+                                <p>Tooru Ishikawa (石川 透 Ishikawa Tōru?) is a supporting character in the series. He attends Katagiri Senior High School where he is enrolled in Class 3-1 and a close friend of Izumi Miyamura who was known to have a crush on Kyouko Hori early in the series.</p>
+                                <p>Initially, Tooru seems to be a very jealous type of person which is shown when he was glaring at Izumi Miyamura when he talked to Kyouko Hori.</p>
+                                <p>He has a very explosive temper as seen in Chapter 12 when he ends up fighting with Miyamura when he (Miyamura) kept waving off Ishikawa's constant pressing on of his theories on whether or not Hori has a crush on Miyamura. However, he expresses regret about losing his temper after the fight.</p>
+                                <p>In the end, he becomes one of Miyamura's closest friends and accepts the fact that he and Hori have started dating.</p>
+                            </div>
+                            <div className="col-md-5 img-container-modal">
+                                <img className="modal-img" src={ishikawa} alt="Horimiya - Tooru Ishikawa"></img>
+                            </div>
+                            <button onClick={tooruIshikawa}>Go Back!</button>
+                        </div>
+                     </Modal>
+                </ul>
+                <ul className="row characters-2">
+                    <li className="col-12 col-md-6 col-lg-3">
+                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                            <div className="cnt-block equal-hight ks">
+                                <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
+                                <h3>Kakeru Sengoku</h3>
                                 <p>Learn More!</p>
                             </div>
                         </a>
@@ -140,17 +170,6 @@ const About = () => {
                             <button onClick={tooruIshikawa}>Go Back!</button>
                         </div>
                      </Modal>
-                </ul>
-                <ul className="row characters-2">
-                    <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
-                            <div className="cnt-block equal-hight ks">
-                                <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
-                                <h3>Kakeru Sengoku</h3>
-                                <p>Learn More!</p>
-                            </div>
-                        </a>
-                    </li>
                     <li className="col-12 col-md-6 col-lg-3">
                         <a href="https://github.com/TheMariamE" className="horimiya-characters">
                             <div className="cnt-block equal-hight ra">
