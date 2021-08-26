@@ -9,7 +9,7 @@ import hori from "../components/imgs/KyoukoHori.jpg";
 import izumi from "../components/imgs/izumi.png";
 import miyamura from "../components/imgs/IzumiMiyamura.jpg";
 import yuki from "../components/imgs/yuki.png";
-import yoshikawa from "../components/imgs/yukiYoshikawa.jpg";
+import yoshikawa from "../components/imgs/YukiYoshikawa.jpg";
 import tooru from "../components/imgs/tooru.png";
 import ishikawa from "../components/imgs/TooruIshikawa.jpg";
 import kakeru from "../components/imgs/kakeru.png";
@@ -24,6 +24,9 @@ const About = () => {
     const [isOpen2, setIsOpen2] = useState(false);
     const [isOpen3, setIsOpen3] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
+    const [isOpen6, setIsOpen6] = useState(false);
+    const [isOpen7, setIsOpen7] = useState(false);
 
     function toggleModal() {
       setIsOpen(!isOpen);
@@ -36,6 +39,15 @@ const About = () => {
     }
     function yukiYoshikawa() {
         setIsOpen4(!isOpen4);
+    }
+    function kakeruSengoku() {
+        setIsOpen5(!isOpen5);
+    }
+    function remiAyasaki() {
+      setIsOpen6(!isOpen6);
+    }
+    function sakuraKouno() {
+        setIsOpen7(!isOpen7);
     }
     return (
         <div id="about">
@@ -146,7 +158,7 @@ const About = () => {
                 </ul>
                 <ul className="row characters-2">
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={kakeruSengoku} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight ks">
                                 <img className="" src={kakeru} alt="Horimiya - Kakeru Sengoku"></img>
                                 <h3>Kakeru Sengoku</h3>
@@ -154,24 +166,24 @@ const About = () => {
                             </div>
                         </a>
                     </li>
-                    <Modal href="" isOpen={isOpen3} onRequestClose={tooruIshikawa} contentLabel="Tooru Ishikawa" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                    <Modal href="" isOpen={isOpen5} onRequestClose={kakeruSengoku} contentLabel="Kakeru Sengoku" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
                         <div className="row">
                             <div className="col-md-7 p-container-modal">
-                                <h2>Tooru Ishikawa</h2>
+                                <h2>Kakeru Sengoku</h2>
                                 <hr></hr>
-                                <p>Izumi Miyamura (宮村 伊澄 Miyamura Izumi?) is the main protagonists of the <b>Horimiya</b> series. He is a student in Class 3-1 of Katagiri Senior High School.</p>
-                                <p>Initially at school, Izumi gives off the impression of a quiet, gloomy and anti-social person. His classmates' perception of him is that he is an otaku with good studying capabilities, but a hard person to approach and maintain a conversation with.</p>
-                                <p>Izumi was noticeably shy and struggled to interact with others when he was a child up to his time junior high, resulting in him being frequently ostracized and bullied—especially by Makio Tanihara and his friend group—as his peers considered him a dreary and distant individual. This treatment caused Izumi to adopt a pessimistic nature, and he would give himself piercings with a safety pin whenever he felt school was giving him a difficult time. During this time, it was implied that he also contemplated suicide.</p>
-                                <p>However, one day, Izumi met Kouichi Shindou, who was, at the time, friends with Makio. Kouichi treated Izumi much better than their other classmates and the two became good friends, even with Makio's attempt at interference, and they kept in touch despite going to separate high schools. The two are close enough that Izumi changes his personality into a violent and foul-mouthed temper towards Kouichi, a complete 180 compared to his usual demeanor. Izumi credits Kouichi for his positive change in personality between junior high and high school.</p>
+                                <p>Kakeru Sengoku (仙石 翔, Sengoku Kakeru) is the charismatic president of the student council of Katagiri Senior High School who is enrolled in class 3-3, the childhood friend of Kyouko Hori and the boyfriend of Remi Ayasaki.</p>
+                                <p>Sengoku is a rather shy boy who gets embarrassed easily. The slightest thing will make him cower in fear, especially things to do with horror or insects. Sengoku is very smart and serious, normally ranked #1 in terms of grades in the school (and #2 in phys ed). He enjoys reading and has an incredible level of concentration while doing so, the point of ignoring everything else going around him.</p>
+                                <p>He is generally not very expressive with his emotions. The sole exception is his anger or irritation, which he shows all the time as he is the Student Council President. Even though he makes threats and gets angry towards those breaking the rules, he doesn't actually like doing so.</p>
+                                <p>Sengoku is very insecure when it comes to his body. Thinking his slender body is embarrassing and always refusing to show it in various occasions, even going as far as to make up extravagant lies to get out of it. He wears multiple layers of clothing to hide his body type.</p>
                             </div>
                             <div className="col-md-5 img-container-modal">
-                                <img className="modal-img" src={miyamura} alt="Horimiya - Izumi Miyamura"></img>
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Kakeru Sengoku"></img>
                             </div>
-                            <button onClick={tooruIshikawa}>Go Back!</button>
+                            <button onClick={kakeruSengoku}>Go Back!</button>
                         </div>
                      </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={remiAyasaki} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight ra">
                                 <img className="" src={remi} alt="Horimiya - Remi Ayasaki"></img>
                                 <h3>Remi Ayasaki</h3>
@@ -179,8 +191,23 @@ const About = () => {
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen6} onRequestClose={remiAyasaki} contentLabel="Remi Ayasaki" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
+                                <h2>Remi Ayasaki</h2>
+                                <hr></hr>
+                                <p>Remi Ayasaki (綾崎 レミ Ayasaki Remi) is a member of the Student Council who attends Katagiri Senior High School where she is enrolled in class 3-5 and she is known as the girlfriend of Kakeru Sengoku.</p>
+                                <p>Remi is usually depicted as a rather childish girl who has a very straightforward personality and who wears her emotions on her sleeve. She seems to rely on other people's help regularly. She's also not very smart, often compared to Izumi Miyamura about which one is more of an idiot. She also usually speaks of himself in 3rd person.</p>
+                                <p>Remi is considered as a beautiful and very cute young girl with waist-length hot pink hair that is tied in twintails (where it straight to her down to her shoulders) with bangs hanging over her forehead while she has chin-length hair strands hanging on either side and dark-pink eyes.</p>
+                            </div>
+                            <div className="col-md-5 img-container-modal">
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Remi Ayasaki"></img>
+                            </div>
+                            <button onClick={remiAyasaki}>Go Back!</button>
+                        </div>
+                     </Modal>
                     <li className="col-12 col-md-6 col-lg-3">
-                        <a href="https://github.com/TheMariamE" className="horimiya-characters">
+                        <a onClick={sakuraKouno} className="horimiya-characters" href="#">
                             <div className="cnt-block equal-hight sk">
                                 <img className="" src={sakura} alt="Horimiya - Sakura Kouno"></img>
                                 <h3>Sakura Kouno</h3>
@@ -188,6 +215,22 @@ const About = () => {
                             </div>
                         </a>
                     </li>
+                    <Modal href="" isOpen={isOpen7} onRequestClose={sakuraKouno} contentLabel="Sakura Kouno" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                        <div className="row">
+                            <div className="col-md-7 p-container-modal">
+                                <h2>Sakura Kouno</h2>
+                                <hr></hr>
+                                <p>Sakura Kouno (河野 桜 Kōno Sakura?) is the vice-president of the student council of Katagiri Senior High School who is enrolled in Class 3-5 with Remi Ayasaki.</p>
+                                <p>Sakura is a well-rounded, kind, and responsible person. She is very hardworking, making sure that the Student Council does its work, as well as any follow-up work. She is also quite conservative as she refuses to admit that she has feelings for Tooru, but she later admits to Remi that she has someone she likes. </p>
+                                <p>She is insecure of herself, so much so that she at one point expresses envy of her close friend Remi, who Sakura believes is cute, unlike herself. Her insecurity, however, is something that she slowly comes to terms with throughout the series, which leads her to gain self-confidence and make new friends.</p>
+                                <p>In book nine, she states that she is Buddhist.</p>
+                            </div>
+                            <div className="col-md-5 img-container-modal">
+                                <img className="modal-img" src={miyamura} alt="Horimiya - Sakura Kouno"></img>
+                            </div>
+                            <button onClick={sakuraKouno}>Go Back!</button>
+                        </div>
+                     </Modal>
                 </ul>
             </div>
             <div id="synopsis-au" className="container-lg synopsis">
