@@ -530,6 +530,30 @@ img.modal-img {
   align-self: center;
 }
 
+.blue-bg-rm {
+  background-color: #45D3E7;
+}
+.rm-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.btn-col{
+  display: grid;
+}
+.rm-btn{
+  margin: auto;
+  align-self: center;
+  width: 100% !important;
+}
+.title-col{
+  display: grid;
+}
+.rm-txt{
+  margin: auto;
+  align-self: center;
+  font-size: 70px;
+  font-family: 'Maiandra GD' !important;
+}
 /************** ABOUT HORIMIYA ***************/
 #synopsis-au {
   margin-top: 100px;

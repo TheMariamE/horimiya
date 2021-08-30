@@ -254,24 +254,19 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Footer /> 
-            <div id="myModal" className="modal fade" role="dialog">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal">&times;</button>
-                            <h4 className="modal-title">Modal Header</h4>
+            <div id="read-manga" className="container-fluid blue-bg-rm">
+                <div className="container rm-container">
+                    <div className="row">
+                        <div className="col-md-9 title-col">
+                            <h2 class="rm-txt">Read the Manga Now Online!</h2>                    
                         </div>
-                        <div className="modal-body">
-                            <p>Some text in the modal.</p>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                        <div className="col-md-3 btn-col">
+                        <img class="rm-btn" src={synopsis} alt="Read Manga - Horimiya"></img>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
