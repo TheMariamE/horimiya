@@ -642,7 +642,7 @@ a#rm-btn {
 /******************* EPISODES BLUE *************************/
 .dark-bg-ep{
   background-color: #2B2B2B;
-  height: 100vh;
+  /*height: 185vh;*/
 }
 .row.ep {
   background-color: #45d3e7;
@@ -652,7 +652,8 @@ a#rm-btn {
   margin-top: 100px;
 }
 .container.ep-container {
-  height: 25vh;
+  /*height: 25vh;*/
+  padding-bottom: 75px;  
   display: grid;
 }
 img.ep-img {
@@ -698,10 +699,6 @@ a.ep-btn:hover img.ep-img {
 }
 
 /******************* EPISODES WHITE *************************/
-.dark-bg-ep-2{
-  background-color: #2B2B2B;
-  height: 100vh;
-}
 .row.ep-2 {
   background-color: #fff;
   border-radius: 150px;

@@ -53,7 +53,7 @@ const Episodes = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=bdDTSn8ZhxQ" className="ep-btn" rel="noreferrer" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=WU96UtqHQ6A" className="ep-btn" rel="noreferrer" target="_blank">
                         <div className="row ep">
                             <div className="col-md-3">
                                 <img className="ep-img" src={ep3} alt="Episode 3 - Horimiya"></img>
@@ -71,7 +71,7 @@ const Episodes = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=IDnr1yfnSgQ" className="ep-2-btn" rel="noreferrer" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=Xa8AvSrg_Gg" className="ep-2-btn" rel="noreferrer" target="_blank">
                         <div className="row ep-2">
                             <div className="col-md-9 ep-2-content">
                                 <div className="row">
@@ -89,7 +89,7 @@ const Episodes = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=bdDTSn8ZhxQ" className="ep-btn" rel="noreferrer" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=S6SMNCloEI4" className="ep-btn" rel="noreferrer" target="_blank">
                         <div className="row ep">
                             <div className="col-md-3">
                                 <img className="ep-img" src={ep5} alt="Episode 5 - Horimiya"></img>
