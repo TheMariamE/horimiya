@@ -649,14 +649,11 @@ a#rm-btn {
   border-radius: 150px;
   height: 22vh;
   align-content: center;
+  margin-top: 100px;
 }
 .container.ep-container {
   height: 25vh;
-  margin-top: 50px;
   display: grid;
-}
-.container-fluid.dark-bg-ep {
-  padding-top: 100px;
 }
 img.ep-img {
   border-radius: 50%;
@@ -680,5 +677,22 @@ h2.ep-title {
   font-size: 50px;
 }
 p.ep-date {
-  font-size: 18px;
+  font-size: 20px;
+}
+img.ep-player {
+  margin: auto;
+  align-self: center;
+}
+a.ep-btn:hover .ep-player {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+a.ep-btn {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+a.ep-btn:hover {
+  color: #fff;
+}
+a.ep-btn:hover img.ep-img {
+  border-color: #45d3e7;
 }

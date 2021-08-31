@@ -13,22 +13,42 @@ const Episodes = () => {
             <EpisodesBanner />
             <div className="container-fluid dark-bg-ep">
                 <div className="container ep-container">
-                    <div className="row ep">
-                        <div className="col-md-3">
-                            <img class="ep-img" src={ep1} alt="Episode 1 - Horimiya"></img>
-                        </div>
-                        <div className="col-md-9 ep-content">
-                            <div className="row">
-                                <div className="col-md-9">
-                                    <h2 className="ep-title">Episode 1 - A Tiny Happenstance</h2>
-                                    <p className="ep-date">Air Date: February 6, 2021</p>
-                                </div>
-                                <div className="col-md-3">
-                                    <img class="ep-player" src={player} alt="Episode 1 - Horimiya"></img>
+                    <a href="https://www.youtube.com/watch?v=bdDTSn8ZhxQ" className="ep-btn" rel="noreferrer" target="_blank">
+                        <div className="row ep">
+                            <div className="col-md-3">
+                                <img className="ep-img" src={ep1} alt="Episode 1 - Horimiya"></img>
+                            </div>
+                            <div className="col-md-9 ep-content">
+                                <div className="row">
+                                    <div className="col-md-9">
+                                        <h2 className="ep-title">Episode 1 - A Tiny Happenstance</h2>
+                                        <p className="ep-date">Air Date: February 6, 2021</p>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <img className="ep-player" src={player} alt="Episode 1 - Horimiya"></img>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=bdDTSn8ZhxQ" className="ep-btn" rel="noreferrer" target="_blank">
+                        <div className="row ep">
+                            <div className="col-md-3">
+                                <img className="ep-img" src={ep1} alt="Episode 1 - Horimiya"></img>
+                            </div>
+                            <div className="col-md-9 ep-content">
+                                <div className="row">
+                                    <div className="col-md-9">
+                                        <h2 className="ep-title">Episode 1 - A Tiny Happenstance</h2>
+                                        <p className="ep-date">Air Date: February 6, 2021</p>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <img className="ep-player" src={player} alt="Episode 1 - Horimiya"></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <a href="https://readmanganato.com/manga-rz951534" id="rm-btn" rel="noreferrer" target="_blank">
