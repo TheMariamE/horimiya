@@ -639,7 +639,7 @@ a#rm-btn {
   text-align: justify;
   font-size: 18px;
 }
-/******************* EPISODES *************************/
+/******************* EPISODES BLUE *************************/
 .dark-bg-ep{
   background-color: #2B2B2B;
   height: 100vh;
@@ -695,4 +695,64 @@ a.ep-btn:hover {
 }
 a.ep-btn:hover img.ep-img {
   border-color: #45d3e7;
+}
+
+/******************* EPISODES WHITE *************************/
+.dark-bg-ep-2{
+  background-color: #2B2B2B;
+  height: 100vh;
+}
+.row.ep-2 {
+  background-color: #fff;
+  border-radius: 150px;
+  height: 22vh;
+  align-content: center;
+  margin-top: 100px;
+}
+.container.ep-2-container {
+  height: 25vh;
+  display: grid;
+}
+img.ep-2-img {
+  border-radius: 50%;
+  border: 25px solid #45d3e7;
+  height: 275px;
+  margin: auto;
+  margin-right: -15px;
+}
+.ep-2 .col-md-3 {
+  display: grid;
+}
+.ep-2-content{
+  display: grid;
+}
+.ep-2-content .row{
+  align-self: center;
+}
+h2.ep-2-title {
+  font-family: 'Maiandra GD' !important;
+  font-size: 50px;
+}
+p.ep-2-date {
+  font-size: 20px;
+}
+img.ep-2-player {
+  margin: auto;
+  align-self: center;
+}
+a.ep-2-btn:hover .ep-2-player {
+  filter: invert(55%) sepia(80%) saturate(105%) hue-rotate(150deg) brightness(130%) contrast(125%);
+}
+a.ep-2-btn {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+a.ep-2-btn:hover {
+  color: #45d3e7;
+}
+a.ep-2-btn:hover img.ep-2-img {
+  border-color: #fff;
+}
+.ep-text{
+  margin: auto;
 }
