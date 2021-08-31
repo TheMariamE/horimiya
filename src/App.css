@@ -257,7 +257,7 @@ ul{
 .episodes-bg{
   background-image: url(./components/imgs/episodesbg.jpg);
   width: auto;
-  height: 100vh;
+  height: 90vh;
   margin-top: -200px;
 }
 .author-bg{
@@ -530,6 +530,7 @@ img.modal-img {
   align-self: center;
 }
 
+/*****************READ MANGA SECTION***********************/
 .blue-bg-rm {
   background-color: #45D3E7;
 }
@@ -545,6 +546,8 @@ img.modal-img {
   align-self: center;
   width: 150px;
   box-shadow: -10px 0px 40px rgb(0 0 0 / 50%);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
 }
 .title-col{
   display: grid;
@@ -569,14 +572,6 @@ a#rm-btn:hover h2.rm-txt {
   transform: scale(1.1);
   color: #2b2b2b;
   font-weight: 600;
-}
-.rm-btn {
-  margin: auto;
-  align-self: center;
-  width: 195px;
-  box-shadow: -10px 0px 40px rgb(0 0 0 / 50%);
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
 }
 a#rm-btn:hover #read-manga {
   background-color: #fff;
@@ -642,5 +637,48 @@ a#rm-btn {
 }
 .sau-description p {
   text-align: justify;
+  font-size: 18px;
+}
+/******************* EPISODES *************************/
+.dark-bg-ep{
+  background-color: #2B2B2B;
+  height: 100vh;
+}
+.row.ep {
+  background-color: #45d3e7;
+  border-radius: 150px;
+  height: 22vh;
+  align-content: center;
+}
+.container.ep-container {
+  height: 25vh;
+  margin-top: 50px;
+  display: grid;
+}
+.container-fluid.dark-bg-ep {
+  padding-top: 100px;
+}
+img.ep-img {
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 25px solid #fff;
+  align-self: center;
+  vertical-align: middle;
+  height: 275px;
+}
+.ep .col-md-3 {
+  display: grid;
+}
+.ep-content{
+  display: grid;
+}
+.ep-content .row{
+  align-self: center;
+}
+h2.ep-title {
+  font-family: 'Maiandra GD' !important;
+  font-size: 50px;
+}
+p.ep-date {
   font-size: 18px;
 }
