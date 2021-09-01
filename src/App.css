@@ -792,12 +792,44 @@ h2.hero {
   font-family: 'Maiandra GD' !important;
   letter-spacing: 4px;
 }
-p.hero-txt {
+p.hero-txt, p.hero-name {
   font-size: 18px;
   text-align: center;
   color: #fff;
   margin-top: 50px;
 }
+h2.daisuke {
+  font-size: 50px;
+  text-align: center;
+  color: #2b2b2b;
+  font-family: 'Maiandra GD' !important;
+  letter-spacing: 4px;
+}
+p.daisuke-txt, p.daisuke-name {
+  font-size: 18px;
+  text-align: center;
+  color: #2b2b2b;
+  margin-top: 50px;
+}
 .blue-bg-author{
   background-color: #45D3E7;
+}
+img.hero-img {
+  border-radius: 50% !important;
+  width: 90% !important;
+  margin: auto;
+  align-self: center;
+  border: 25px solid #45d3e7;
+  z-index: 2;
+}
+.bg-blue-hero {
+  background-color: #45d3e7;
+  width: 20%;
+  height: 60%;
+  position: absolute;
+  z-index: 0;
+  margin-left: 25px;
+}
+.hero-img-container{
+  display: grid;
 }

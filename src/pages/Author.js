@@ -18,7 +18,8 @@ const Author = () => {
                             <p className="hero-txt">I'm grateful to have been offered a chance to have my webcomic turned into a manga. It's surprising how much the impression of it can change with just a different artist! The story seems so much more understandable! Miyamura seems so much sexier! It's bringing back the feelings I had when I first started drawing it, and I hope that I'll be able to enjoy it just as much as a reader now!</p>
                             <p className="hero-name">—HERO, Volume 1</p>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 hero-img-container">
+                            <div className="bg-blue-hero"></div>
                             <img className="hero-img" src={hori} alt="Horimiya - Hiroki Adachi"></img>
                         </div>
                     </div>                
