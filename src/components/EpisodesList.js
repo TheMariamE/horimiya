@@ -11,9 +11,11 @@ const EpisodesList = [
     title: "Episode 1 - A Tiny Happenstance",
     date: "Air Date: February 6, 2021",
     img1: ep1,
+    mEpisode: "https://mega.nz/embed/6IsDESwI#WtlCmHPdt_lhT2MAKz07RLNGxybPxJDv3A8KxjTkzOw",
     url2: "https://www.youtube.com/watch?v=IDnr1yfnSgQ",
     title2: "Episode 2 - You Wear More Than One Face",
     date2: "Air Date: February 13, 2021",
+    mEpisode2: "https://mega.nz/embed/uI0nwIIa#dh_NfbmC_8iGW9oe6u0vxGGImTyQu9HSfoKh8BYkhv0",
     img2: ep2
 },
 {

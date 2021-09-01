@@ -768,3 +768,14 @@ button.load-more {
   padding-top: 50px;
   padding-bottom: 100px;
 }
+.modal-vid{
+  min-width: 100% !important;
+  height: 65vh !important;
+}
+.modal-close-vid{
+  float: right;
+}
+.container.ep-container.ep-btn-lm {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}

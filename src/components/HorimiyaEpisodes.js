@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Modal from "react-modal";
 import player from "../components/imgs/play-button.svg";
+import hori from "../components/imgs/KyoukoHori.jpg";
 
-const HorimiyaEpisodes = ({ episodesToRender }) => {return (
+Modal.setAppElement("#root");
+
+const HorimiyaEpisodes = ({ episodesToRender }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+
+    function toggleModal() {
+      setIsOpen(!isOpen);
+    }
+    function toggleModal2() {
+      setIsOpen2(!isOpen2);
+    }
+
+    return (
     <div className="container-fluid dark-bg-ep">
       {episodesToRender.map((episodes, index) => (
         <div className="container ep-container">
-            <a href={episodes.url} key={index} className="ep-btn" rel="noreferrer" target="_blank">
+            <a onClick={toggleModal} href="#" key={index} className="ep-btn" rel="noreferrer">
                 <div className="row ep">
                     <div className="col-md-3">
                         <img className="ep-img" src={episodes.img1} alt={episodes.title}></img>
@@ -23,7 +38,7 @@ const HorimiyaEpisodes = ({ episodesToRender }) => {return (
                     </div>
                 </div>
             </a>
-            <a href={episodes.url2} className="ep-2-btn" rel="noreferrer" target="_blank">
+            <a href="#" onClick={toggleModal2} className="ep-2-btn" rel="noreferrer">
                 <div className="row ep-2">
                     <div className="col-md-9 ep-2-content">
                         <div className="row">
@@ -41,6 +56,26 @@ const HorimiyaEpisodes = ({ episodesToRender }) => {return (
                     </div>
                 </div>
             </a>
+            <Modal href="" isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Episodes" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                    <div className="col-md-12">
+                        <h2>{episodes.title}</h2>
+                        <hr></hr>
+                        <iframe className="modal-vid" src={episodes.mEpisode} frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="col-md-12">
+                        <button className="modal-close-vid" onClick={toggleModal}>Go Back!</button>
+                    </div>
+            </Modal>
+            <Modal href="" isOpen={isOpen2} onRequestClose={toggleModal2} contentLabel="Episodes" className="mymodal" overlayClassName="myoverlay" closeTimeoutMS={100}>
+                    <div className="col-md-12">
+                        <h2>{episodes.title2}</h2>
+                        <hr></hr>
+                        <iframe className="modal-vid" src={episodes.mEpisode2} frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="col-md-12">
+                        <button className="modal-close-vid" onClick={toggleModal2}>Go Back!</button>
+                    </div>
+            </Modal>
         </div>
       ))}
     </div>
