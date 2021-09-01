@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import player from "../components/imgs/play-button.svg";
-import hori from "../components/imgs/KyoukoHori.jpg";
 
 Modal.setAppElement("#root");
 
