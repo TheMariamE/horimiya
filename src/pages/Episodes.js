@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import HorimiyaEpisodes from "../components/HorimiyaEpisodes";
+import episodes from "../components/EpisodesList";
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import EpisodesBanner from '../components/EpisodesBanner';
 import readmanga from "../components/imgs/ReadtheManga.jpg";
-import ep1 from "../components/imgs/episode1.jpg";
-import ep2 from "../components/imgs/episode2.jpg";
-import ep3 from "../components/imgs/episode3.jpg";
-import ep4 from "../components/imgs/episode4.jpg";
-import ep5 from "../components/imgs/episode5.jpg";
-import player from "../components/imgs/play-button.svg";
+const episodesPerPage = 1;
+let arrayForHoldingEpisodes = [];
 
 const Episodes = () => {
+    const [episodesToShow, setEpisodesToShow] = useState([]);
+    const [next, setNext] = useState(1);
+  
+    const loopWithSlice = (start, end) => {
+      const slicedEpisodes = episodes.slice(start, end);
+      arrayForHoldingEpisodes = [...arrayForHoldingEpisodes, ...slicedEpisodes];
+      setEpisodesToShow(arrayForHoldingEpisodes);
+    };
+  
+    useEffect(() => {
+      loopWithSlice(0, episodesPerPage);
+    }, []);
+  
+    const handleShowMoreEpisodes = () => {
+      loopWithSlice(next, next + episodesPerPage);
+      setNext(next + episodesPerPage);
+    };
     return (
         <div id="episodes">
             <Navbar />
             <EpisodesBanner />
+            <HorimiyaEpisodes episodesToRender={episodesToShow} />
             <div className="container-fluid dark-bg-ep">
+                <div className="container ep-container ep-btn-lm">
+                    <button className="load-more" onClick={handleShowMoreEpisodes}>Load more</button>
+                </div>
+            </div>
+            {/* <div className="container-fluid dark-bg-ep">
                 <div className="container ep-container">
                     <a href="https://www.youtube.com/watch?v=bdDTSn8ZhxQ" className="ep-btn" rel="noreferrer" target="_blank">
                         <div className="row ep">
@@ -108,7 +129,7 @@ const Episodes = () => {
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> */}
             <a href="https://readmanganato.com/manga-rz951534" id="rm-btn" rel="noreferrer" target="_blank">
                 <div id="read-manga" className="container-fluid blue-bg-rm">
                     <div className="container rm-container">
@@ -125,7 +146,7 @@ const Episodes = () => {
             </a>
             <Footer /> 
         </div>
-    )
-}
+    );
+};
 
 export default Episodes;

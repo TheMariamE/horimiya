@@ -653,7 +653,7 @@ a#rm-btn {
 }
 .container.ep-container {
   /*height: 25vh;*/
-  padding-bottom: 75px;  
+  padding-bottom: 25px;  
   display: grid;
 }
 img.ep-img {
@@ -752,4 +752,19 @@ a.ep-2-btn:hover img.ep-2-img {
 }
 .ep-text{
   margin: auto;
+}
+
+/*Episodes Button*/
+button.load-more {
+  width: 300px;
+  margin: auto;
+  height: 100px;
+  font-family: 'Maiandra GD' !important;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.ep-btn-lm{
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
