@@ -326,7 +326,7 @@ footer h3 {
 .footer-d {
   color: #fff;
   text-align: justify;
-  margin-right: 75px;
+  margin-right: 25px;
   font-size: 18px;
   margin-top: 25px;
 }
@@ -377,7 +377,7 @@ a.footer-logo img {
 }
 .row.social-row {
   padding-top: 50px;
-  padding-right: 50px;
+  margin: auto;
 }
 a.social-logo img {
   transform: scale(1);
@@ -782,8 +782,8 @@ button.load-more {
 
 /******************* AUTHORS *************************/
 #author .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 h2.hero {
   font-size: 50px;
@@ -792,11 +792,17 @@ h2.hero {
   font-family: 'Maiandra GD' !important;
   letter-spacing: 4px;
 }
-p.hero-txt, p.hero-name {
+p.hero-txt {
   font-size: 18px;
   text-align: center;
   color: #fff;
   margin-top: 50px;
+}
+p.hero-name {
+  font-size: 18px;
+  color: #2b2b2b;
+  margin-top: 50px;
+  text-align: right;
 }
 h2.daisuke {
   font-size: 50px;
@@ -805,11 +811,17 @@ h2.daisuke {
   font-family: 'Maiandra GD' !important;
   letter-spacing: 4px;
 }
-p.daisuke-txt, p.daisuke-name {
+p.daisuke-txt {
   font-size: 18px;
   text-align: center;
   color: #2b2b2b;
   margin-top: 50px;
+}
+p.daisuke-name {
+  font-size: 18px;
+  color: #2b2b2b;
+  margin-top: 50px;
+  text-align: right;
 }
 .blue-bg-author{
   background-color: #45D3E7;
@@ -819,17 +831,51 @@ img.hero-img {
   width: 90% !important;
   margin: auto;
   align-self: center;
-  border: 25px solid #45d3e7;
+  border: 25px solid #fff;
   z-index: 2;
 }
 .bg-blue-hero {
   background-color: #45d3e7;
-  width: 20%;
-  height: 60%;
+  width: 25%;
+  height: 65%;
   position: absolute;
   z-index: 0;
-  margin-left: 25px;
 }
-.hero-img-container{
+img.daisuke-img {
+  border-radius: 50% !important;
+  width: 90% !important;
+  margin: auto;
+  align-self: center;
+  border: 25px solid #fff;
+  z-index: 2;
+}
+.bg-dark-daisuke {
+  background-color: #2b2b2b;
+  width: 25%;
+  height: 65%;
+  position: absolute;
+  z-index: 0;
+  left: 25%;
+}
+.hero-img-container, .daisuke-img-container{
   display: grid;
+}
+.daisuke-txt-container {
+  padding: 100px 0px;
+}
+p.daisuke-i {
+  text-align: right;
+  color: #fff;
+  z-index: 9;
+  margin-top: -100px;
+  font-size: 22px;
+  margin-right: -10px;
+}
+p.hero-i {
+  text-align: left;
+  color: #fff;
+  z-index: 9;
+  margin-top: -100px;
+  font-size: 22px;
+  margin-left: 25px;
 }

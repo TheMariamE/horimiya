@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import AuthorBanner from '../components/AuthorBanner';
-import hori from "../components/imgs/KyoukoHori.jpg";
+import hero from "../components/imgs/Hero.jpg";
+import daisuke from "../components/imgs/Daisuke.jpg";
 
 const Author = () => {
     return (
@@ -20,7 +21,8 @@ const Author = () => {
                         </div>
                         <div className="col-md-6 hero-img-container">
                             <div className="bg-blue-hero"></div>
-                            <img className="hero-img" src={hori} alt="Horimiya - Hiroki Adachi"></img>
+                            <img className="hero-img" src={hero} alt="Horimiya - Hiroki Adachi"></img>
+                            <p className="hero-i">AUTHOR</p>
                         </div>
                     </div>                
                 </div>
@@ -28,10 +30,12 @@ const Author = () => {
             <div className="container-fluid blue-bg-author">
                 <div className="container">
                     <div className="row">
-                    <div className="col-md-6">
-                            <img className="hero-img" src={hori} alt="Horimiya - Daisuke Hagiwara"></img>
+                    <div className="col-md-6 daisuke-img-container">
+                        <div className="bg-dark-daisuke"></div>
+                            <img className="daisuke-img" src={daisuke} alt="Horimiya - Daisuke Hagiwara"></img>
+                            <p className="daisuke-i">ILLUSTRATOR</p>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 daisuke-txt-container">
                             <h2 className="daisuke">Daisuke Hagiwara</h2>
                             <p className="daisuke-txt">Daisuke Hagiwara (萩原ダイスケ Hagiwara Daisuke?) is the artist of the ongoing Horimiya manga series serialized in Monthly GFantasy and works alongside HERO, the writer. The manga is a spin-off of HERO's webcomic, Hori-san to Miyamura-kun.<br></br>On the Volume 1 cover of Horimiya, Daisuke Hagiwara wrote a message stating:</p>
                             <p className="daisuke-txt">I'm Hagiwara the artist. I'm praying that I have been able to reproduce even a little bit of the world of HERO-sensei's Horimiya. It has been stressful, but a lot of fun! I hope you can enjoy it!</p>
