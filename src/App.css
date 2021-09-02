@@ -879,3 +879,11 @@ p.hero-i {
   font-size: 22px;
   margin-left: 25px;
 }
+.container-fluid.contact-c {
+  padding: 0px 3%;
+  background-color: #2b2b2b;
+}
+.social-contact .row{
+  float: right;
+  margin-top: -25px;
+}
