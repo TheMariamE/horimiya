@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import ContactBanner from '../components/ContactBanner';
+import ContactForm from '../components/ContactForm';
 import facebook from "../components/imgs/facebook.png";
 import linkedin from "../components/imgs/linkedin.png";
 import youtube from "../components/imgs/youtube.png";
@@ -32,6 +33,11 @@ const Contact = () => {
                         </div>
                     </div>  
                 </div>                    
+            </div>
+            <div className="container-fluid contact-c">
+                <div className="container">
+                    <ContactForm />
+                </div>
             </div>
             <Footer /> 
         </div>
