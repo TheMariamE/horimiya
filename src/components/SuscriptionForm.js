@@ -4,7 +4,7 @@ import { Form, Input, Button, Icon } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
 const SERVICE_ID = "service_s9ofxys";
-const TEMPLATE_ID = "template_4s92d5a";
+const TEMPLATE_ID = "template_zp5gpxo";
 const USER_ID = "user_QzD5No57f2JCp8waEvgvZ";
 
 const SuscriptionForm = () => {
@@ -33,7 +33,6 @@ const SuscriptionForm = () => {
         <Form onSubmit={handleOnSubmit}>
               <Form.Field
               id='form-input-control-name-sus'
-              className="col-md-6"
               control={Input}
               name='user_name'
               placeholder='Full Name*'
@@ -43,7 +42,6 @@ const SuscriptionForm = () => {
               />
               <Form.Field
               id='form-input-control-email-sus'
-              className="col-md-6"
               control={Input}
               name='user_email'
               placeholder='Email*'
