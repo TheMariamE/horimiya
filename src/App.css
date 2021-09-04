@@ -95,6 +95,7 @@ a.navbar-brand img {
   position: relative;
   display: block;
   border-radius: 5px;
+  margin-top: 5px;
 }
 #app .home-m a.nav-link,
 #about .about-m a.nav-link,
@@ -794,7 +795,7 @@ button.load-more {
 }
 
 /******************* AUTHORS *************************/
-#author .container {
+#author .dark-bg-ep .container, #author .blue-bg-author .container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -908,7 +909,7 @@ p.hero-i {
   min-height: 100vh;
   padding: 100px 0px;
 }
-#contact button {
+#contact-form button  {
   width: 275px;
   margin: auto;
   height: 75px;
@@ -940,7 +941,6 @@ div#form-input-control-country {
   line-height: 25px;
   width: 308px;
   height: 72px;
-  margin-left: 12px;
 }
 #form-input-control-country .item span {
   letter-spacing: 1px;
@@ -1005,4 +1005,8 @@ i.user.circle.outline.icon:before, i.mail.outline.icon:before {
 }
 .SuscriptionForm button.ui.green.button:hover {
   background-color: #45d3e7;
+}
+#form-input-control-email-error-message {
+  position: absolute;
+  margin-top: -35px;
 }
