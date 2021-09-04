@@ -40,10 +40,9 @@ const ContactForm = () => {
         { key: 'ep10', value: 'ep10', text: "Episode 10 - Until the Snow Melts" },
         { key: 'ep11', value: 'ep11', text: "Episode 11 - It May Seem Like Hate" },
         { key: 'ep12', value: 'ep12', text: "Episode 12 - Hitherto, and Forevermore" },
-        { key: 'ep13', value: 'ep13', text: "Episode 13 - I Would Gift You the Sky" },
-
+        { key: 'ep13', value: 'ep13', text: "Episode 13 - I Would Gift You the Sky" }
       ]
-
+ 
 return (
     <div className="ContactForm">
       <Form onSubmit={handleOnSubmit}>

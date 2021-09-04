@@ -5,6 +5,7 @@ import linkedin from "./imgs/linkedin.png";
 import youtube from "./imgs/youtube.png";
 import twitter from "./imgs/twitter.png";
 import { Link } from 'react-router-dom';
+import SuscriptionForm from './SuscriptionForm';
 
 const Footer = () => {
     return (
@@ -44,6 +45,7 @@ const Footer = () => {
                         <div className="col-md-3">
                             <h3>Suscribe</h3>
                             <p className="footer-sub">to Our Newsletter!</p>
+                            <SuscriptionForm />
                         </div>
                     </div>
                 </div>
