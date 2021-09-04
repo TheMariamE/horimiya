@@ -18,13 +18,13 @@ const MainBanner = () => {
                 <li className="col-12 col-md-6 col-lg-6">
                     <div className="cnt-block equal-hight kh">
                         <h3>Kyouko Hori</h3>
-                        <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        <p><a href="/about">Learn More!</a></p>
                     </div>
                 </li>
                 <li className="col-12 col-md-6 col-lg-6">
                     <div className="cnt-block equal-hight im">
                         <h3>Izumi Miyamura</h3>
-                        <p><a href="https://github.com/TheMariamE">Learn More!</a></p>
+                        <p><a href="/about">Learn More!</a></p>
                     </div>
                 </li>
                 </ul>

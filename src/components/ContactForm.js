@@ -72,7 +72,14 @@ return (
             placeholder='Phone Number*'
             required
             />
-            <Select id='form-input-control-country' className="col-md-6" name="user_episode" placeholder="Select favorite episode" options={episodeOptions} required />
+            <Select 
+            id='form-input-control-country' 
+            className="col-md-6" 
+            options={episodeOptions} 
+            name='user_episode'
+            placeholder="Select favorite episode" 
+            required
+             />
             <Form.Field
             id='form-textarea-control-opinion'
             control={TextArea}

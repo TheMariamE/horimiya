@@ -108,6 +108,7 @@ a.navbar-brand img {
 h2.jap-title {
   font-size: 150px;
   text-align: center;
+  font-weight: 500;
 }
 .main-title {
   float: right;
@@ -180,6 +181,7 @@ ul{
   letter-spacing: 2px;
   line-height: 50px;
   font-size: 40px;
+  font-weight: 400;
 }
 
 /*************SYNOPSIS SECTION***************/
@@ -193,6 +195,7 @@ ul{
   font-size: 50px;
   letter-spacing: 5px;
   margin-bottom: 25px;
+  font-weight: 400;
 }
 .blue-bg {
   background-color: #45D3E7;
@@ -294,6 +297,7 @@ ul{
   letter-spacing: 5px;
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 400;
 }
 #gallery-1 {
   text-align: center;
@@ -324,6 +328,7 @@ footer h3 {
   font-size: 40px;
   letter-spacing: 2px;
   color: #FFF;
+  font-weight: 400;
 }
 .footer-d {
   color: #fff;
@@ -384,10 +389,12 @@ a.footer-logo img {
 a.social-logo img {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
-  width: 210px;
 }
 a.social-logo:hover img {
   transform: scale(1.1);
+}
+.social-contact a.social-logo img {
+  width: 210px;
 }
 /************************ ABOUT US ****************************/
 
@@ -617,6 +624,7 @@ a#rm-btn {
   letter-spacing: 5px;
   margin-bottom: 25px;
   text-align: center;
+  font-weight: 400;
 }
 .sau-img img {
   width: 110%;
@@ -679,6 +687,7 @@ img.ep-img {
 h2.ep-title {
   font-family: 'Maiandra GD' !important;
   font-size: 50px;
+  font-weight: 400;
 }
 p.ep-date {
   font-size: 20px;
@@ -732,6 +741,7 @@ img.ep-2-img {
 h2.ep-2-title {
   font-family: 'Maiandra GD' !important;
   font-size: 50px;
+  font-weight: 400;
 }
 p.ep-2-date {
   font-size: 20px;
@@ -794,6 +804,7 @@ h2.hero {
   color: #fff;
   font-family: 'Maiandra GD' !important;
   letter-spacing: 4px;
+  font-weight: 400;
 }
 p.hero-txt {
   font-size: 18px;
@@ -813,6 +824,7 @@ h2.daisuke {
   color: #2b2b2b;
   font-family: 'Maiandra GD' !important;
   letter-spacing: 4px;
+  font-weight: 400;
 }
 p.daisuke-txt {
   font-size: 18px;
