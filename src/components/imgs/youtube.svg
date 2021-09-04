@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 473.931 473.931" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="236.9655" cx="236.9655" cy="236.9655" fill="#45d3e7" shape="circle" transform="matrix(0.8,0,0,0.8,47.393099975585926,47.393099975585926)"/><g transform="matrix(0.7,0,0,0.7,71.08979644775391,71.08979644775391)"><script id="metastreaminitscript">(function() {
+    document.getElementById('metastreaminitscript').remove()
+
+    const INIT_TIMEOUT = 5e3
+    const isFirefox = navigator.userAgent.toLowerCase().includes('firefox')
+
+    //=========================================================================
+    // document.createElement proxy
+    //=========================================================================
+
+    window.__metastreamMediaElements = new Set()
+
+    // Proxy document.createElement to trap media elements created in-memory
+    const origCreateElement = document.createElement
+    const proxyCreateElement = function() {
+      const element = origCreateElement.apply(document, arguments)
+      if (window.__metastreamMediaElements &amp;&amp; element instanceof HTMLMediaElement) {
+        window.__metastreamMediaElements.add(element)
+      }
+      return element
+    }
+    proxyCreateElement.toString = origCreateElement.toString.bind(origCreateElement)
+    document.createElement = proxyCreateElement
+
+    setTimeout(() =&gt; {
+      if (window.__metastreamMediaElements) {
+        window.__metastreamMediaElements.clear()
+        window.__metastreamMediaElements = undefined
+      }
+    }, INIT_TIMEOUT)
+
+    //=========================================================================
+    // navigator.mediaSession proxy (Firefox)
+    //=========================================================================
+
+    if (isFirefox) {
+      // stub out MediaSession API until Firefox supports this natively
+      if (!navigator.mediaSession) {
+        const noop = () =&gt; {}
+        const mediaSessionStub = {
+          __installedByMetastreamRemote__: true,
+          setActionHandler: noop
+        }
+        Object.defineProperty(window.navigator, 'mediaSession', {
+          value: mediaSessionStub,
+          enumerable: false,
+          writable: true
+        })
+
+        function MediaMetadata(metadata) {
+          Object.assign(this, metadata)
+        }
+        window.MediaMetadata = MediaMetadata
+      }
+
+      const { mediaSession } = navigator
+
+      // Capture action handlers for player.js proxy
+      mediaSession._handlers = {}
+
+      const _setActionHandler = mediaSession.setActionHandler
+      mediaSession.setActionHandler = function(name, handler) {
+        mediaSession._handlers[name] = handler
+        _setActionHandler.apply(mediaSession, arguments)
+      }
+    }
+
+    //=========================================================================
+    // document.domain fix (Firefox)
+    //=========================================================================
+
+    if (isFirefox) {
+      const domains = ['twitch.tv', 'crunchyroll.com']
+
+      // Fix for setting document.domain in sandboxed iframe
+      try {
+        const { domain } = document
+        if (domain &amp;&amp; domains.some(d =&gt; domain.includes(d))) {
+          Object.defineProperty(document, 'domain', {
+            value: domain,
+            writable: true
+          })
+        }
+      } catch (e) {}
+    }
+
+    //=========================================================================
+    // Inline script embed prevention fix
+    //=========================================================================
+
+    const observeScripts = () =&gt; {
+      const scriptSnippets = [
+        { code: 'window.top !== window.self', replacement: 'false' },
+        { code: 'self == top', replacement: 'true' },
+        { code: 'top.location != window.location', replacement: 'false' }
+      ]
+
+      const getAddedScripts = mutationList =&gt;
+        mutationList.reduce((scripts, mutation) =&gt; {
+          if (mutation.type !== 'childList') return scripts
+          const inlineScripts = Array.from(mutation.addedNodes).filter(
+            node =&gt; node instanceof HTMLScriptElement &amp;&amp; node.textContent.length &gt; 0
+          )
+          return inlineScripts.length &gt; 0 ? [...scripts, ...inlineScripts] : scripts
+        }, [])
+
+      // Modifies inline scripts to allow embedding content in iframe
+      const inlineScriptModifier = mutationsList =&gt; {
+        const scripts = getAddedScripts(mutationsList)
+        for (let script of scripts) {
+          for (let snippet of scriptSnippets) {
+            if (script.textContent.includes(snippet.code)) {
+              script.textContent = script.textContent.split(snippet.code).join(snippet.replacement)
+            }
+          }
+        }
+      }
+
+      const observer = new MutationObserver(inlineScriptModifier)
+      observer.observe(document.documentElement, { childList: true, subtree: true })
+
+      // Stop watching for changes after we finish loading
+      window.addEventListener('load', () =&gt; observer.disconnect())
+    }
+
+    observeScripts()
+  }());</script>
+<circle xmlns="http://www.w3.org/2000/svg" style="" cx="236.966" cy="236.966" r="236.966" fill="#d42428" data-original="#d42428"/>
+<path xmlns="http://www.w3.org/2000/svg" style="" d="M404.518,69.38c92.541,92.549,92.549,242.593,0,335.142c-92.541,92.541-242.593,92.545-335.142,0  L404.518,69.38z" fill="#cc202d" data-original="#cc202d"/>
+<path xmlns="http://www.w3.org/2000/svg" style="" d="M469.168,284.426L351.886,167.148l-138.322,15.749l-83.669,129.532l156.342,156.338  C378.157,449.322,450.422,376.612,469.168,284.426z" fill="#ba202e" data-original="#ba202e"/>
+<path xmlns="http://www.w3.org/2000/svg" style="" d="M360.971,191.238c0-19.865-16.093-35.966-35.947-35.966H156.372c-19.85,0-35.94,16.105-35.94,35.966  v96.444c0,19.865,16.093,35.966,35.94,35.966h168.649c19.858,0,35.947-16.105,35.947-35.966v-96.444H360.971z M216.64,280.146  v-90.584l68.695,45.294L216.64,280.146z" fill="#ffffff" data-original="#ffffff"/>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+<g xmlns="http://www.w3.org/2000/svg">
+</g>
+</g></svg>

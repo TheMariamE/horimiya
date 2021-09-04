@@ -384,6 +384,7 @@ a.footer-logo img {
 a.social-logo img {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
+  width: 210px;
 }
 a.social-logo:hover img {
   transform: scale(1.1);
