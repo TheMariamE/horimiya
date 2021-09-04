@@ -310,7 +310,8 @@ ul{
 /*************** FOOTER***************/
 .dark-bg {
   background-color: #2B2B2B !important;
-  padding: 75px 150px 50px 150px;
+  padding-top: 75px;
+  padding-bottom: 50px;
 }
 .dark-bg-cp {
   background-color: #2B2B2B;
@@ -891,7 +892,7 @@ p.hero-i {
 }
 #contact-form{
   background-image: url(./components/imgs/contact-bg.jpg);
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 0px;
 }
 #contact button {
@@ -952,4 +953,7 @@ div#form-input-control-country {
   padding: 35px;
   background-color: rgb(255 255 255 / 60%);
   margin-bottom: 15px;
+}
+.map-horimiya {
+  width: 100%;
 }
