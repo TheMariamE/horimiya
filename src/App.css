@@ -121,6 +121,7 @@ h2.jap-title {
   color: #fff;
   letter-spacing: 8px;
   font-family: 'Maiandra GD' !important;
+  font-weight: 500;
 }
 .main-title {
   position: absolute;
@@ -890,11 +891,65 @@ p.hero-i {
 }
 #contact-form{
   background-image: url(./components/imgs/contact-bg.jpg);
-  height: 80vh;
+  height: 100vh;
   padding: 100px 0px;
 }
 #contact button {
-  width: 250px;
+  width: 275px;
   margin: auto;
-  height: 50px;
+  height: 75px;
+  border-radius: 0px;
+  background-color: #2b2b2b;
+  font-family: 'Lucida Sans' !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#form-input-control-name, input#form-input-control-email, input#form-input-control-phone {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255 255 255 / 70%);
+  padding: 25px;
+  font-size: 20px;
+  font-family: 'Lucida Sans' !important;
+  letter-spacing: 2px;
+  color: #2b2b2b;
+}
+div#form-input-control-country {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255 255 255 / 70%);
+  font-size: 18px;
+  font-family: 'Lucida Sans' !important;
+  letter-spacing: 2px;
+  color: #2b2b2b;
+  line-height: 25px;
+  width: 308px;
+  height: 72px;
+  margin-left: 12px;
+}
+#form-input-control-country .item span {
+  letter-spacing: 1px;
+}
+#form-textarea-control-opinion {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255 255 255 / 70%);
+  padding: 25px;
+  font-size: 20px;
+  font-family: 'Lucida Sans' !important;
+  letter-spacing: 2px;
+  color: #2b2b2b;
+  height: 300px;
+}
+#contact-form-title h2 {
+  font-size: 75px;
+  font-family: 'Maiandra GD' !important;
+  font-weight: 200;
+  letter-spacing: 8px;
+}
+#contact-form-title {
+  padding: 35px;
+  background-color: rgb(255 255 255 / 60%);
+  margin-bottom: 15px;
 }

@@ -38,6 +38,9 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">  
                         <div className="col-md-6">
+                            <div id="contact-form-title">
+                                <h2>Get in Touch with us!</h2>
+                            </div>
                             <ContactForm />
                         </div>
                         <div className="col-md-6">
