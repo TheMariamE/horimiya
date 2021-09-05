@@ -92,7 +92,7 @@ return (
             name='user_episode'
             placeholder="Select favorite episode" 
             required
-             />
+            />
             <Form.Field
             id='form-textarea-control-opinion'
             control={TextArea}

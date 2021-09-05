@@ -1010,3 +1010,11 @@ i.user.circle.outline.icon:before, i.mail.outline.icon:before {
   position: absolute;
   margin-top: -35px;
 }
+#form-input-control-email-sus-error-message {
+  position: absolute;
+  margin-top: -25px;
+}
+.kh a:hover, 
+.im a:hover {
+  color: #fff;
+}

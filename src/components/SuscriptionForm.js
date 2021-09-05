@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 import { Form, Input, Button, Icon } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
+import EmailValidator from 'email-validator';
 
 const SERVICE_ID = "service_s9ofxys";
 const TEMPLATE_ID = "template_zp5gpxo";
@@ -27,6 +28,8 @@ const SuscriptionForm = () => {
           });
         e.target.reset()
     };
+    const [emailInput, setEmail] = useState("");
+    const [validEmail, validateEmail] = useState(true);
 
     return (
         <div className="SuscriptionForm">
@@ -48,6 +51,15 @@ const SuscriptionForm = () => {
               icon='mail outline'
               iconPosition='left'
               required
+              value={emailInput}
+              onChange={e => {
+                  setEmail(e.target.value);                               
+                  validateEmail(EmailValidator.validate(e.target.value));
+              }}
+              error={validEmail ? false : {
+                  content: 'Please enter a valid email address.',
+                  pointing: 'below'
+              }}
               />
               <Button type='submit' color='green'><Icon name='send' />Suscribe!</Button>
         </Form>
