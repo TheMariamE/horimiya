@@ -409,6 +409,7 @@ a.social-logo:hover img {
 ul.row.characters-1 {
   align-content: center;
   margin: auto;
+  padding: 0px;
 }
 .characters-2 {
   display: flex;
