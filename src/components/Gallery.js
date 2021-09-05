@@ -17,7 +17,7 @@ const Gallery = () => {
             <div className="row">
                 <div className="col-md-12 col-lg-4">
                     <div>
-                        <img className="" src={img1} alt="Horimiya - Main Background"></img>
+                        <img className="g-img-3" src={img1} alt="Horimiya - Main Background"></img>
                     </div>
                 </div>
                 <div className="col-md-12 col-lg-4">
@@ -40,7 +40,7 @@ const Gallery = () => {
                 </div>
                 <div className="col-md-12 col-lg-4">
                     <div>
-                        <img className="" src={img3} alt="Horimiya - Main Background"></img>
+                        <img className="g-img-3" src={img3} alt="Horimiya - Main Background"></img>
                     </div>
                 </div>
             </div>
