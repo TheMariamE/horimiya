@@ -1,6 +1,8 @@
 # Anime Web Site - Horimiya 
 
-This project consists of the [prototype](https://xd.adobe.com/view/7036004d-702d-4e13-a301-ef4e85ec3a15-2565/) created to adapt the most interesting information of an anime within a website, for this we use React to create the site.
+This project consists of the [prototype](https://xd.adobe.com/view/7036004d-702d-4e13-a301-ef4e85ec3a15-2565/) created to adapt the most interesting information of an anime within a website, for this we use React to create the site. 
+
+#Visit the Deployed website now: horimiya.mariamedwards.com
 
 ## Available Scripts
 
