@@ -56,7 +56,7 @@ const Footer = () => {
                         <p></p>
                     </div>
                     <div className="col-md-6 blue-bg-cp">
-                        <p className="copyright">Copyright © 2021. No rights reserved. | Web Design by Mariam Edwards.</p>
+                        <p className="copyright">Copyright © 2021. Web Design rights reserved by Mariam Edwards.</p>
                     </div>
                 </div>
             </div>
