@@ -8,7 +8,7 @@ const MainBanner = () => {
                 <h2 className="jap-title">ホリミヤ</h2>
             </div>
             <div className="main-bg">
-                <div className="col-md-11 main-title">
+                <div className="col-sm-12 col-md-11 main-title">
                     <h1 className="h-title">Horimiya</h1>
                 </div>
                 <div className="char-cards">

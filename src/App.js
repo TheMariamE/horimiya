@@ -6,6 +6,8 @@ import Episodes from './pages/Episodes.js';
 import Author from './pages/Author.js';
 import Contact from './pages/Contact.js';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 function App() {
