@@ -21,16 +21,16 @@ const HorimiyaEpisodes = ({ episodesToRender }) => {
         <div className="container ep-container">
             <a onClick={toggleModal} href="#" key={index} className="ep-btn" rel="noreferrer">
                 <div className="row ep">
-                    <div className="col-md-3">
+                    <div className="col-3 col-md-3">
                         <img className="ep-img" src={episodes.img1} alt={episodes.title}></img>
                     </div>
-                    <div className="col-md-9 ep-content">
+                    <div className="col-9 col-md-9 ep-content">
                         <div className="row">
-                            <div className="col-md-9 ep-text">
+                            <div className="col-9 col-md-9 ep-text">
                                 <h2 className="ep-title">{episodes.title}</h2>
                                 <p className="ep-date">{episodes.date}</p>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <img className="ep-player" src={player} alt={episodes.title}></img>
                             </div>
                         </div>
@@ -39,18 +39,18 @@ const HorimiyaEpisodes = ({ episodesToRender }) => {
             </a>
             <a href="#" onClick={toggleModal2} className="ep-2-btn" rel="noreferrer">
                 <div className="row ep-2">
-                    <div className="col-md-9 ep-2-content">
+                    <div className="col-9 col-md-9 ep-2-content">
                         <div className="row">
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <img className="ep-2-player" src={player} alt={episodes.title2}></img>
                             </div>
-                            <div className="col-md-9 ep-text">
+                            <div className="col-9 col-md-9 ep-text">
                                 <h2 className="ep-2-title">{episodes.title2}</h2>
                                 <p className="ep-2-date">{episodes.date2}</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-3 col-md-3">
                         <img className="ep-2-img" src={episodes.img2} alt={episodes.title2}></img>
                     </div>
                 </div>

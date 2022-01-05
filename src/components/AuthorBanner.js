@@ -4,7 +4,7 @@ const AuthorBanner = () => {
     return (
         <div>
             <div className="author-bg">
-                <div className="col-md-11 main-title contact-title">
+                <div className="col-12 col-md-11 main-title contact-title">
                     <h1 className="h-title">Authors</h1>
                 </div>
             </div>

@@ -266,9 +266,38 @@ ul{
     font-size: 80px;
     margin: 15px 0px;
   }
-  .main-title .h-title {
+  .main-bg .main-title .h-title {
     font-size: 40px;
     padding: 15px 50px;
+  }
+  .about-bg .main-title .h-title,
+  .episodes-bg .h-title {
+    font-size: 40px;
+    padding: 15px 0px;
+    letter-spacing: 4px;
+  }
+  .about-bg {
+    margin-top: -165px !important;
+    background-position: top;
+  }
+  .mymodal {
+    width: 100% !important;
+    padding: 15px !important;
+    margin: 15px;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+    height: 100vh !important;
+    overflow-y: scroll !important;
+}
+  .mymodal .p-container-modal {
+      padding: 15px !important;
+  }
+  a#rm-btn:hover h2.rm-txt {
+    transform: scale(0.8);
+  }
+  .rm-container {
+      padding-top: 0px;
   }
   .cnt-block.equal-hight {
     padding: 40px 15px;
@@ -292,16 +321,69 @@ ul{
   #gallery-1 {
     display: none;
   }
-
-  /* .char-cards {
-      margin-top: -750px;
-  } */
+  .rm-container {
+    padding-top: 15px;
+  }
+  h2.rm-txt {
+      font-size: 40px;
+      letter-spacing: 5px;
+      text-align: center;
+      margin-bottom: 15px;
+  }
   .main-bg img {
-      /* width: auto;
-      height: 45%;
-      margin-left: -550px; */
       width: 100%;
       height: 45%;
+  }
+  img.ep-img {
+    margin-left: -20px !important;
+    border: 5px solid #fff !important;
+    height: 85px !important;
+  }
+  img.ep-2-img {
+      margin-left: -25px !important;
+      border: 5px solid #45d3e7 !important;
+      height: 85px !important;
+  }
+  a.ep-btn:hover .ep-player,
+  a.ep-2-btn:hover .ep-2-player {
+      height: 60px !important;
+  }
+  img.ep-player {
+      height: 60px !important;
+      margin-left: -15px !important;
+  }
+  img.ep-2-player {
+      height: 60px !important;
+      margin-left: -7px !important;
+  }
+  .row.ep,
+  .row.ep-2 {
+      border-radius: 25px !important;
+      height: 22vh !important;
+      margin-top: 50px !important;
+  }
+  h2.ep-title,
+  h2.ep-2-title {
+      font-size: 18px !important;
+  }
+  p.ep-date,
+  p.ep-2-date {
+      font-size: 14px !important;
+  }
+  .container.ep-container {
+    padding-bottom: 0px;
+  } 
+  button.load-more {
+    width: auto !important;
+    margin: 15px !important;
+    height: 65px !important;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+    border: none !important;
+  }
+  .container.ep-container.ep-btn-lm {
+    padding-top: 25px !important;
+    padding-bottom: 50px !important;
   }
 }
 .about-bg{
