@@ -345,6 +345,41 @@ ul{
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
   }
+  #author .dark-bg-ep .container, #author .blue-bg-author .container {
+    padding-bottom: 50px !important;
+  }
+  #author .blue-bg-author .container {
+    padding-top: 50px !important;
+  }
+  .col-md-6.daisuke-txt-container {
+    padding-bottom: 25px;
+  } 
+  .bg-blue-hero {
+    min-height: 45vh !important;
+  }
+  p.hero-i {
+    margin-top: -25px !important;
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+  p.hero-name {
+    margin-top: 25px !important;
+  }
+  p.daisuke-i {
+    margin-top: -10px !important;
+    font-size: 12px !important;
+    margin-right: 10px !important;
+  }
+  .bg-dark-daisuke {
+    min-height: 47vh !important;
+    left: 69% !important;
+  }
+  .col-md-6.daisuke-txt-container {
+    padding-top: 25px !important;
+  }
+  p.daisuke-txt, p.hero-txt {
+    margin-top: 25px !important;
+  }
   .mymodal {
     width: 100% !important;
     padding: 15px !important;
