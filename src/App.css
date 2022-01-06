@@ -380,6 +380,9 @@ ul{
   p.daisuke-txt, p.hero-txt {
     margin-top: 25px !important;
   }
+  .footer-d {
+    margin-bottom: 15px !important;
+  }
   .mymodal {
     width: 100% !important;
     padding: 15px !important;
@@ -484,6 +487,16 @@ ul{
   .container.ep-container.ep-btn-lm {
     padding-top: 25px !important;
     padding-bottom: 50px !important;
+  }
+  .sau-img img {
+    width: 100% !important;
+  }
+  .col-md-6.sau-description.blue-bg-au {
+    margin: auto !important;
+    padding: 15px !important;
+  }
+  #about-us {
+    height: auto !important;
   }
 }
 .about-bg{
