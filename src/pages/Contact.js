@@ -18,16 +18,16 @@ const Contact = () => {
                     <div className="col-md-6"></div>
                     <div className="col-md-6 social-contact">
                         <div className="row">
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <a className="social-logo" href="https://www.facebook.com/Horimiya.animefanpage/" target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook - Logo"></img></a>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <a className="social-logo" href="https://www.linkedin.com/in/mariam-edwards/" target="_blank" rel="noreferrer"><img src={linkedin} alt="Linkedin - Logo"></img></a>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <a className="social-logo" href="https://www.youtube.com/watch?v=8iP8xXXdvoU" target="_blank" rel="noreferrer"><img src={youtube} alt="Youtube - Logo"></img></a>
                             </div>
-                            <div className="col-md-3">
+                            <div className="col-3 col-md-3">
                                 <a className="social-logo" href="https://twitter.com/horimiya_anime" target="_blank" rel="noreferrer"><img src={twitter} alt="Twitter - Logo"></img></a>
                             </div>
                         </div>

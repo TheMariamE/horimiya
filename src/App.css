@@ -271,7 +271,9 @@ ul{
     padding: 15px 50px;
   }
   .about-bg .main-title .h-title,
-  .episodes-bg .h-title {
+  .episodes-bg .h-title,
+  .author-bg .h-title,
+  .contact-bg .h-title {
     font-size: 40px;
     padding: 15px 0px;
     letter-spacing: 4px;
@@ -279,6 +281,69 @@ ul{
   .about-bg {
     margin-top: -165px !important;
     background-position: top;
+  }
+  .aboutus-title {
+    top: 70vh !important;
+  }
+  .episodes-bg {
+    height: 90vh !important;
+    margin-top: -100px !important;
+    background-position: center;
+  }
+  .author-bg {
+    height: 75vh !important;
+    margin-top: -25px !important;
+    background-position: center;
+  }
+  .contact-bg {
+    height: 103vh !important;
+    margin-top: -170px !important;
+    background-position: bottom;
+  }
+  .contact-title {
+    top: 70vh !important;
+  }
+  .social-contact a.social-logo img {
+    width: 90px !important;
+    margin-left: -15px;
+    transform: unset !important;
+  }
+  .social-contact .row {
+    margin-top: -55px !important;
+  }
+  #contact-form-title h2 {
+    font-size: 40px !important;
+  }
+  #contact-form {
+    padding: 25px 0px !important;
+  }
+  div#form-input-control-country {
+    width: 300px !important;
+    height: 72px;
+  }
+  #form-textarea-control-opinion {
+    height: 200px !important;
+  }
+  #contact-form button {
+    margin-bottom: 15px;
+  }
+  h2.hero,
+  h2.daisuke {
+    font-size: 40px !important;
+    letter-spacing: -1px !important;
+  }
+  button.navbar-toggler {
+    background-color: #45d3e7;
+    border-radius: 0px;
+    padding: 10px;
+  }
+  .navbar-toggler-icon {
+      width: 1.60em;
+      height: 1.60em;
+  }
+  button.navbar-toggler:hover {
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
   }
   .mymodal {
     width: 100% !important;
