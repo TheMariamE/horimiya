@@ -398,7 +398,7 @@ ul{
     transform: unset !important;
     height: 100vh !important;
     overflow-y: scroll !important;
-}
+  }
   .mymodal .p-container-modal {
       padding: 15px !important;
   }
@@ -412,7 +412,7 @@ ul{
       padding-top: 0px;
   }
   .cnt-block.equal-hight {
-    padding: 40px 25px;
+    padding: 40px 20px;
   }
   .char-cards ul.row {
     height: auto;
@@ -536,15 +536,15 @@ ul{
     padding: 50px 25px 0px 25px !important;
   }
   #about-us div.cnt-block.equal-hight{
-    height: 250px !important;
+    height: 315px !important;
   }
   #about-us {
     padding-top: 50px !important;
-}
+  }
   .cnt-block h3 {
-    letter-spacing: 1px !important;
-    line-height: 30px !important;
-    font-size: 30px !important;
+    letter-spacing: 2px!important;
+    line-height: 55px!important;
+    font-size: 50px!important;
   }
   ul.row.characters-2 {
     padding-left: 0px;
@@ -556,6 +556,7 @@ ul{
   #about-us img {
     height: 150px !important;
     padding: 0px 50px;
+    margin-top: -150px !important;
   }
 } 
 .about-bg{
