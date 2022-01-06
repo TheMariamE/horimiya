@@ -291,17 +291,23 @@ ul{
     background-position: center;
   }
   .author-bg {
-    height: 75vh !important;
+    height: 85vh !important;
     margin-top: -25px !important;
     background-position: center;
+  }
+  .container-fluid.dark-bg-ep .container {
+    padding-top: 50px !important;
   }
   .contact-bg {
     height: 103vh !important;
     margin-top: -170px !important;
     background-position: bottom;
   }
-  .contact-title {
-    top: 70vh !important;
+  .contact-bg .contact-title {
+    top: 75vh !important;
+  }
+  .author-bg .contact-title {
+    top: 60vh !important;
   }
   .social-contact a.social-logo img {
     width: 90px !important;
@@ -399,6 +405,9 @@ ul{
   a#rm-btn:hover h2.rm-txt {
     transform: scale(0.8);
   }
+  button.ui.green.button {
+    margin-bottom: 25px !important;
+  }
   .rm-container {
       padding-top: 0px;
   }
@@ -407,6 +416,9 @@ ul{
   }
   .char-cards ul.row {
     height: auto;
+  }
+  .char-cards {
+    margin-left: 25px;
   }
   .main-bg {
     height: 110vh;
