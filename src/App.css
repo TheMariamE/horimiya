@@ -390,7 +390,7 @@ ul{
     margin-bottom: 15px !important;
   }
   .mymodal {
-    width: 100% !important;
+    width: 90% !important;
     padding: 15px !important;
     margin: 15px;
     top: unset !important;
@@ -412,7 +412,7 @@ ul{
       padding-top: 0px;
   }
   .cnt-block.equal-hight {
-    padding: 40px 15px;
+    padding: 40px 25px;
   }
   .char-cards ul.row {
     height: auto;
@@ -510,7 +510,54 @@ ul{
   #about-us {
     height: auto !important;
   }
+  /*******About us Synopsis*******/
+  .dark-bg-au {
+    height: unset !important;
+  }
+  #synopsis-au {
+    margin-top: 50px !important;
+    margin-bottom: 25px !important;
+  }
+  #synopsis-au h2.sau-title {
+    margin-bottom: 0px !important;
+  }
+  .row.dark-bg-au {
+    margin-top: 25px !important;
+  }
+  /*******About us Modals*******/
+  #about-us li {
+    margin-right: 0px;
+    padding-right: 0px;
 }
+  #about-us .cnt-block.equal-hight {
+    width: 300px !important;
+    margin-top: 15px;
+    height: unset !important;
+    padding: 50px 25px 0px 25px !important;
+  }
+  #about-us div.cnt-block.equal-hight{
+    height: 250px !important;
+  }
+  #about-us {
+    padding-top: 50px !important;
+}
+  .cnt-block h3 {
+    letter-spacing: 1px !important;
+    line-height: 30px !important;
+    font-size: 30px !important;
+  }
+  ul.row.characters-2 {
+    padding-left: 0px;
+    margin-top: 0px !important;
+  }
+  ul.row.characters-1 li {
+    padding-left: 0px !important;
+  }
+  #about-us img {
+    height: 150px !important;
+    padding: 0px 50px;
+  }
+} 
 .about-bg{
   background-image: url(./components/imgs/aboutbg.jpg);
   width: auto;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import mainbg from "./imgs/mainbg.jpg";
 
 const MainBanner = () => {
@@ -16,13 +17,13 @@ const MainBanner = () => {
                     <li className="col-12 col-md-6 col-lg-6">
                         <div className="cnt-block equal-hight kh">
                             <h3>Kyouko Hori</h3>
-                            <p><a href="/about">Learn More!</a></p>
+                            <p><Link className="nav-footer about" to="/about">Learn More!</Link></p>
                         </div>
                     </li>
                     <li className="col-12 col-md-6 col-lg-6">
                         <div className="cnt-block equal-hight im">
                             <h3>Izumi Miyamura</h3>
-                            <p><a href="/about">Learn More!</a></p>
+                            <p><Link className="nav-footer about" to="/about">Learn More!</Link></p>
                         </div>
                     </li>
                     </ul>
