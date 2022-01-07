@@ -324,7 +324,7 @@ ul{
     padding: 25px 0px !important;
   }
   div#form-input-control-country {
-    width: 300px !important;
+    width: 100% !important;
     height: 72px;
   }
   #form-textarea-control-opinion {
@@ -530,10 +530,10 @@ ul{
     padding-right: 0px;
 }
   #about-us .cnt-block.equal-hight {
-    width: 300px !important;
+    width: 100% !important;
     margin-top: 15px;
     height: unset !important;
-    padding: 50px 25px 0px 25px !important;
+    padding: 50px 40px 0px 40px !important;
   }
   #about-us div.cnt-block.equal-hight{
     height: 315px !important;
@@ -549,13 +549,14 @@ ul{
   ul.row.characters-2 {
     padding-left: 0px;
     margin-top: 0px !important;
+    margin-right: 0px !important;
   }
   ul.row.characters-1 li {
     padding-left: 0px !important;
   }
   #about-us img {
     height: 150px !important;
-    padding: 0px 50px;
+    padding: 0px 60px;
     margin-top: -150px !important;
   }
 } 
