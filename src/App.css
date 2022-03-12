@@ -50,7 +50,16 @@
        url('../src/fonts/LTYPE.TTF') format('tff'),
        url('../src/fonts/LTYPEB.TTF') format('tff'),
        url('../src/fonts/LTYPEBO.TTF') format('tff'),
-       url('../src/fonts/LTYPEO.TTF') format('tff')
+       url('../src/fonts/LTYPEO.TTF') format('tff'),
+       url('../src/fonts/LucidaSans.woff2') format('woff2'),
+       url('../src/fonts/LucidaSans.woff') format('woff'),
+       url('../src/fonts/LucidaSans-Demi.woff2') format('woff2'),
+       url('../src/fonts/LucidaSans-Demi.woff') format('woff'),
+       url('../src/fonts/LucidaSans-TypewriterBold.woff2') format('woff2'),
+       url('../src/fonts/LucidaSans-TypewriterBold.woff') format('woff'),
+       url('../src/fonts/LucidaSans-Typewriter.woff2') format('woff2'),
+       url('../src/fonts/LucidaSans-Typewriter.woff') format('woff');
+
 }
 @font-face {
   font-family: 'Maiandra GD';
@@ -58,7 +67,9 @@
   font-weight: 400;
   src: url('../src/fonts/MAIAN.TTF'); 
   src: local('Maiandra GD'), local('MaiandraGD'),
-       url('../src/fonts/MAIAN.TTF') format('tff')
+       url('../src/fonts/MAIAN.TTF') format('tff'),
+       url('../src/fonts/MaiandraGD-Regular.woff2') format('woff2'),
+       url('../src/fonts/MaiandraGD-Regular.woff') format('woff');
 }
 body {
   font-family: 'Lucida Sans' !important;
