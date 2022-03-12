@@ -44,7 +44,7 @@ const Contact = () => {
                             <ContactForm />
                         </div>
                         <div className="col-md-6">
-                        <iframe className="map-horimiya" src="https://www.google.com/maps/d/u/0/embed?mid=1Us4MPiCRfUFe-IBQg68EkzW5o4K5uVxH" height="750"></iframe>
+                        <iframe className="map-horimiya" title="Somewhere Dummy Map for Horimiya's Headquarters" src="https://www.google.com/maps/d/u/0/embed?mid=1Us4MPiCRfUFe-IBQg68EkzW5o4K5uVxH" height="750"></iframe>
                         </div>
                     </div>
                 </div>

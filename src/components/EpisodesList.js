@@ -1,4 +1,3 @@
-import React from 'react';
 import ep1 from "./imgs/episode1.jpg";
 import ep2 from "./imgs/episode2.jpg";
 import ep3 from "./imgs/episode3.jpg";
@@ -19,20 +18,20 @@ const EpisodesList = [
     title: "Episode 1 - A Tiny Happenstance",
     date: "Air Date: February 6, 2021",
     img1: ep1,
-    mEpisode: "https://mega.nz/embed/6IsDESwI#WtlCmHPdt_lhT2MAKz07RLNGxybPxJDv3A8KxjTkzOw",
+    mEpisode: "https://mega.nz/embed/tA4g2DwA#T55HQW066J_CnuJglb7dovDleBkzR5Hr4bfkDSz9FR8",
     title2: "Episode 2 - You Wear More Than One Face",
     date2: "Air Date: February 13, 2021",
-    mEpisode2: "https://mega.nz/embed/uI0nwIIa#dh_NfbmC_8iGW9oe6u0vxGGImTyQu9HSfoKh8BYkhv0",
+    mEpisode2: "https://mega.nz/embed/hdp2xbTD#CDQ7Adm85JJaV6cDLAkvyc2WNtcHrcxUeMS0M3Rg2dY",
     img2: ep2
 },
 {
     title: "Episode 3 - That's Why It's Okay",
     date: "Air Date: February 20, 2021",
     img1: ep3,
-    mEpisode: "https://mega.nz/embed/eMtRnQzS#jU6PPlYrW6ecJmWDmER98ZClGRwW_wrJ4MeCae8jD3U",
+    mEpisode: "https://mega.nz/embed/QdggmJ7J#-IwQxkhJbi_-Xe40py5kUi6DgYLTm91huC48r7gXyxE",
     title2: "Episode 4 - Everybody Loves Somebody",
     date2: "Air Date: March 6, 2021",
-    mEpisode2: "https://mega.nz/embed/LFVQxZLJ#VEGJjFnhBJJUuHTIxqefVAbT_I3zJhY1BT0wTjog9Vw",
+    mEpisode2: "https://www.yourupload.com/embed/q0D610R0Q1p2",
     img2: ep4
 },
 {
@@ -62,24 +61,24 @@ const EpisodesList = [
     mEpisode: "https://mega.nz/embed/ANJRjC5a#HnRrOUkr330SHu0iSFjTyY_bF1P8AVSfmZUYfZ1q-JY",
     title2: "Episode 10 - Until the Snow Melts",
     date2: "Air Date: April 17, 2021",
-    mEpisode2: "https://mega.nz/embed/hMRzlAIB#ktuIz0XZDgES8uYMNQrPzaj9-Yo3GkBB_0YMvPAr95I",
+    mEpisode2: "https://mega.nz/embed/ANJRjC5a#HnRrOUkr330SHu0iSFjTyY_bF1P8AVSfmZUYfZ1q-JY",
     img2: ep10
 },
 {
     title: "Episode 11 - It May Seem Like Hate",
     date: "Air Date: April 24, 2021",
     img1: ep11,
-    mEpisode: "https://mega.nz/embed/ZJRVCIpZ#EUTZfYM-mxBcs_8cIXXMr734ovzIMnNWgK2_cmFWD7g",
+    mEpisode: "https://mega.nz/embed/mTIV0KpL#VpbqioRdMdVynsooXMcIWuR0oUyCZrK_h5eWuhsHPjk",
     title2: "Episode 12 - Hitherto, and Forevermore",
     date2: "Air Date: May 1, 2021",
-    mEpisode2: "https://mega.nz/embed/8cQxEITJ#9XkyW5gb6-P17iadvnbQwP97ZEsQ2pJolDBrZWSBLQI",
+    mEpisode2: "https://mega.nz/embed/OTIBiI6J#c7SBF6s6NhBcBj3g-Kevn1lSbwTWFeF4PeRMQaFZT14",
     img2: ep12
 },
 {
     title: "Episode 13 - I Would Gift You the Sky",
     date: "Air Date: May 8, 2021",
     img1: ep13,
-    mEpisode: "https://mega.nz/embed/4AAngaDS#oLaxuawMBX13kZN6OoKEnpMrbCo6nLLspfoMbYIZDzs",
+    mEpisode: "https://mega.nz/embed/KLIDnQBA#Wx20f9lhhxn1EvkQmCOrISOwh7wwUTWW1iv28QCvftA",
     title2: "Episode 14 - Never Going To Let You Down",
     date2: "Air Date: May 15, 2021",
     mEpisode2: "https://www.youtube.com/embed/dQw4w9WgXcQ",
