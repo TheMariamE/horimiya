@@ -46,9 +46,5 @@
   },
   "devDependencies": {
     "terser-brunch": "^4.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build"
   }
 }
