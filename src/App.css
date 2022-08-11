@@ -1199,7 +1199,7 @@ img.daisuke-img {
 .bg-dark-daisuke {
   background-color: #2b2b2b;
   width: 25%;
-  min-height: 70vh;
+  min-height: 64vh;
   position: absolute;
   z-index: 0;
   left: 24%;
@@ -1361,5 +1361,11 @@ i.user.circle.outline.icon:before, i.mail.outline.icon:before {
   }
   .cnt-block.equal-hight {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  .bg-dark-daisuke {
+    min-height: 40vh!important;
   }
 }
