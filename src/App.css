@@ -582,6 +582,7 @@ ul{
   width: auto;
   height: 100vh;
   margin-top: -200px;
+  background-size: cover;
 }
 .episodes-bg{
   background-image: url(./components/imgs/episodesbg.jpg);
@@ -662,6 +663,10 @@ footer h3 {
   font-size: 18px;
   margin-top: 25px;
 }
+a.footer-logo, .social-row {
+  padding-right: 25px;
+}
+
 .nav-footer {
   display: block;
   margin: 15px 0px;
@@ -698,7 +703,7 @@ p.footer-sub {
   display: inline-block;
 }
 a.footer-logo img {
-  width: 100%;
+  width: 95%;
 }
 .copyright {
   color: #2B2B2B;
@@ -726,8 +731,7 @@ a.social-logo:hover img {
 /************** ABOUT CHARACTERS ***************/
 #about-us {
   background-color: #45d3e7;
-  height: 65vh;
-  padding-top: 25px;
+  height: 75vh;
   display: grid;
 }
 ul.row.characters-1 {
@@ -739,6 +743,10 @@ ul.row.characters-1 {
   display: flex;
   justify-content: center;
   margin-top: 100px !important;
+}
+.characters-2 li {
+  display: flex;
+  justify-content: center;
 }
 #about-us .cnt-block.equal-hight {
   width: 360px;
